@@ -1,0 +1,15 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All rights reserved"
+ 
+[[mods]]
+modId="konchu"
+version="v0.0.1"
+displayName="Konchu"
+logoFile="konchu.png"
+credits="rainbowdestiny"
+authors="rainbowdestiny"
+description='''
+A mod that adds arthropod wildlife to Minecraft!
+''' 
+ 
