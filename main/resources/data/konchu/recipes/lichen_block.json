@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "LLL",
+    "LLL",
+    "LLL"
+  ],
+  "key":
+  {
+    "L":
+    {
+      "item": "konchu:lichen_clump"
+    }
+  },
+  "result":
+  {
+    "item": "konchu:lichen_block",
+    "count": 1
+  }
+}

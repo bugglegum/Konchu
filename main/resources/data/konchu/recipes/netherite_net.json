@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "INI",
+    " S ",
+    " S "
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    "N":
+    {
+      "item": "konchu:net"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "konchu:netherite_net",
+    "count": 1
+  }
+}

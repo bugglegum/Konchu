@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "WNW",
+    " S ",
+    " S "
+  ],
+  "key":
+  {
+    "W":
+    {
+      "item": "minecraft:planks"
+    },
+    "N":
+    {
+      "item": "konchu:net"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "konchu:wooden_net",
+    "count": 1
+  }
+}

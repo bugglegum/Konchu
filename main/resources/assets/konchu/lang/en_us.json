@@ -1,3 +1,13 @@
 {
-	"item.konchu.net": "Bug Net"
+	"item.konchu.wooden_net": "Wooden Bug Net",
+	"item.konchu.cloth_net": "Cloth Bug Net",
+	"item.konchu.iron_net": "Iron Bug Net",
+	"item.konchu.golden_net": "Golden Bug Net",
+	"item.konchu.diamond_net": "Diamond Bug Net",
+	"item.konchu.netherite_net": "Netherite Bug Net",
+	
+	"item.konchu.net": "Net",
+	"item.konchu.lichen_clump": "Clump of Lichen",
+	
+	"block.konchu.lichen_block": "Block of Lichen"
 }

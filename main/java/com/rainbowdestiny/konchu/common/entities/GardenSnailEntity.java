@@ -14,8 +14,9 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 public class GardenSnailEntity extends CreatureEntity implements IAnimatable
 {
     private AnimationFactory factory = new AnimationFactory(this);
+	private boolean ignoreFrustumCheck;
 
-    public GeoExampleEntity(EntityType<? extends CreatureEntity> type, World worldIn)
+    public void GeoExampleEntity(EntityType<? extends CreatureEntity> type, World worldIn)
     {
         super(type, worldIn);
         this.ignoreFrustumCheck = true;
@@ -27,7 +28,8 @@ public class GardenSnailEntity extends CreatureEntity implements IAnimatable
         return PlayState.CONTINUE;
     }
 
-    @Override
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	@Override
     public void registerControllers(AnimationData data)
     {
         data.addAnimationController(new AnimationController(this, "controller", 0, this::predicate));

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CNC",
+    " S ",
+    " S "
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "minecraft:wool"
+    },
+    "N":
+    {
+      "item": "konchu:net"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "konchu:cloth_net",
+    "count": 1
+  }
+}

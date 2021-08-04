@@ -14,6 +14,6 @@ public class EntityTypesInit {
 
 	public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITIES, Konchu.MOD_ID);
 	
-	public static final RegistryObject
+	public static final RegistryObject<EntityType<GardenSnailEntity>> GARDEN_SNAIL_ENTITY = KonchuRegistry.ENTITIES.register("garden_snail_entity", () -> EntityType.Builder.<GardenSnailEntity>create(GardenSnailEntity::new, EntityClassification.MISC).size(0.8f,0.8f).build(new ResourceLocation(Konchu.MOD_ID, "garden_snail_entity").toString()));
 
 }
