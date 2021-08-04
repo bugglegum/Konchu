@@ -27,5 +27,6 @@ public class ItemInit {
 
 	//Block Items
     public static final RegistryObject<Item> LICHEN_BLOCK_ITEM = ItemInit.ITEMS.register("lichen_block", () -> new ItemBase(BlockInit.LICHEN_BLOCK.get(),ItemGroup.TAB_DECORATIONS));
+    public static final RegistryObject<Item> CRAB_BLOCK_ITEM = ItemInit.ITEMS.register("crab_block", () -> new ItemBase(BlockInit.CRAB_BLOCK.get(), ItemGroup.TAB_BUILDING_BLOCKS));
 
 }
