@@ -2,8 +2,8 @@
 	"credit": "Konchu",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "konchu:items/diamond_net_tex",
-		"particle": "konchu:items/diamond_net"
+		"0": "konchu:item/diamond_net_tex",
+		"particle": "konchu:item/diamond_net"
 	},
 	"elements": [
 		{

@@ -9,6 +9,8 @@ public class ServerProxy {
     }
     
     public void doClientStuff(FMLClientSetupEvent event) {
+
+    	
     }
 
 }

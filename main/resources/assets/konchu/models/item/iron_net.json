@@ -2,8 +2,8 @@
 	"credit": "Konchu",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "konchu:items/iron_net_tex",
-		"particle": "konchu:items/iron_net"
+		"0": "konchu:item/iron_net_tex",
+		"particle": "konchu:item/iron_net"
 	},
 	"elements": [
 		{

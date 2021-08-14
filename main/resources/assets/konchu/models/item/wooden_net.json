@@ -2,8 +2,8 @@
 	"credit": "Konchu",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "konchu:items/wooden_net_tex",
-		"particle": "konchu:items/wooden_net"
+		"0": "konchu:item/wooden_net_tex",
+		"particle": "konchu:item/wooden_net"
 	},
 	"elements": [
 		{

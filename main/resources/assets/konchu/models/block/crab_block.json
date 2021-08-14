@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "konchu:blocks/crab_block"
-  }
+   "parent": "block/cube",
+   "textures": {
+       "particle": "konchu:block/crab_block_front",
+       "down": "konchu:block/crab_block_bottom",
+       "up": "konchu:block/crab_block_top",
+       "north": "konchu:block/crab_block_front",
+       "east": "konchu:block/crab_block_left",
+       "south": "konchu:block/crab_block_back",
+       "west": "konchu:block/crab_block_right"
+    }
 }

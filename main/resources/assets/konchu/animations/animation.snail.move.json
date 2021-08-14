@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.snail.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Shell": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [10, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"Body": {
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1.1]
+						},
+						"0.5": {
+							"vector": [1, 1, 0.9]
+						},
+						"1.0": {
+							"vector": [1, 1, 1.1]
+						}
+					}
+				}
+			}
+		}
+	}
+}

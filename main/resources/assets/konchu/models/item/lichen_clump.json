@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "konchu:items/lichen_clump"
+    "layer0": "konchu:item/lichen_clump"
   }
 }

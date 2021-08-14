@@ -1,9 +1,5 @@
 package com.rainbowdestiny.konchu.main;
 
-import java.util.Map;
-
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-
 public class ClientProxy extends ServerProxy {
 
 	//@Override

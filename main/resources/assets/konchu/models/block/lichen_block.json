@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "konchu:blocks/lichen_block"
+    "all": "konchu:block/lichen_block"
   }
 }

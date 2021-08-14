@@ -2,8 +2,8 @@
 	"credit": "Konchu",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "konchu:items/netherite_net_tex",
-		"particle": "konchu:items/netherite_net"
+		"0": "konchu:item/netherite_net_tex",
+		"particle": "konchu:item/netherite_net"
 	},
 	"elements": [
 		{

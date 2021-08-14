@@ -1,15 +1,15 @@
 package com.rainbowdestiny.konchu.client.render.entity;
 
+import com.rainbowdestiny.konchu.client.render.model.GardenSnailModel;
+import com.rainbowdestiny.konchu.common.entities.GardenSnailEntity;
+
 import net.minecraft.client.renderer.entity.EntityRendererManager;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
-public class GardenSnailRenderer extends GeoEntityRenderer<Object>{
-
-	@SuppressWarnings("unchecked")
-	protected GardenSnailRenderer(EntityRendererManager renderManager, AnimatedGeoModel modelProvider) {
-		super(renderManager, modelProvider);
-		// TODO Auto-generated constructor stub
-	}
-
+public class GardenSnailRenderer extends GeoEntityRenderer<GardenSnailEntity>
+{
+    public GardenSnailRenderer(EntityRendererManager renderManager)
+    {
+        super(renderManager, new GardenSnailModel());
+    }
 }
