@@ -1,0 +1,21 @@
+{
+"type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "LLL",
+    "LLL",
+    "LLL"
+  ],
+  "key":
+  {
+    "L":
+    {
+      "item": "konchu:crab_shell"
+    }
+  },
+  "result":
+  {
+    "item": "konchu:crab_block",
+    "count": 1
+  }
+}

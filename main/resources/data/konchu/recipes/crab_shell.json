@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "konchu:crab_block"
+    }
+  ],
+  "result":
+  {
+    "item": "konchu:crab_shell",
+    "count": 9
+  }
+}
