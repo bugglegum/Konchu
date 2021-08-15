@@ -1,5 +1,5 @@
 {
-   "parent": "block/cube",
+   "parent": "block/orientable",
    "textures": {
        "particle": "konchu:block/crab_block_front",
        "down": "konchu:block/crab_block_bottom",

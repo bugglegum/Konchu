@@ -1,5 +1,8 @@
 {
-    "variants": {
-        "": { "model": "konchu:block/crab_block" }
-    }
+  "variants": {
+    "facing=west":  { "model": "konchu:block/crab_block"},
+    "facing=north": { "model": "konchu:block/crab_block", "y": 90 },
+    "facing=east":  { "model": "konchu:block/crab_block", "y": 180 },
+    "facing=south": { "model": "konchu:block/crab_block", "y": 270}
+  }
 }
