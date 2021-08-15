@@ -6,23 +6,18 @@
     " S ",
     " S "
   ],
-  "key":
-  {
-    "D":
-    {
+  "key": {
+    "D": {
       "item": "minecraft:diamond"
     },
-    "N":
-    {
+    "N": {
       "item": "konchu:net"
     },
-    "S":
-    {
+    "S": {
       "item": "minecraft:stick"
     }
   },
-  "result":
-  {
+  "result": {
     "item": "konchu:diamond_net",
     "count": 1
   }

@@ -1,12 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
+  	{
       "item": "konchu:lichen_block"
     }
   ],
-  "result":
-  {
+  "result": {
     "item": "konchu:lichen_clump",
     "count": 9
   }

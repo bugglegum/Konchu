@@ -16,9 +16,9 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
-public class ItemBase extends BlockItem {
+public class BlockItemBase extends BlockItem {
     public String description = "";
-    public ItemBase(Block blockIn, ItemGroup group) {
+    public BlockItemBase(Block blockIn, ItemGroup group) {
         super(blockIn, new Item.Properties().tab(group));
     }        
         

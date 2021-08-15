@@ -19,15 +19,15 @@ public class KonchuRegistry {
 	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, Konchu.MOD_ID);
 	public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES,Konchu.MOD_ID);
 	
-	public static BlockInit Blocks;
-	public static ItemInit Items;
-	public static EntityTypesInit Entities;
+	public static KonchuBlocks Blocks;
+	public static KonchuItems Items;
+	public static KonchuEntityTypes Entities;
 
 	public static void init() {
 		
-		Blocks = new BlockInit();
-		Items = new ItemInit();
-		Entities = new EntityTypesInit();
+		Blocks = new KonchuBlocks();
+		Items = new KonchuItems();
+		Entities = new KonchuEntityTypes();
 		
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "konchu:block/drift_log_top",
+    "side": "konchu:block/drift_log"
+  }
+}

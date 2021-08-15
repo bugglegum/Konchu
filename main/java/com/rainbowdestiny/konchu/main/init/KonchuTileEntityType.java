@@ -1,5 +1,4 @@
 package com.rainbowdestiny.konchu.main.init;
 
-public class TileEntityTypeInit {
-
+public class KonchuTileEntityType {
 }

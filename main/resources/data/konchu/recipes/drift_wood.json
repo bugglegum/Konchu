@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "DD",
+    "DD"
+  ],
+  "key": {
+    "D": {
+      "item": "konchu:drift_log"
+    }
+  },
+  "result": {
+    "item": "konchu:drift_wood",
+    "count": 3
+  }
+}

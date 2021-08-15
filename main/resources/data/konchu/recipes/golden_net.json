@@ -1,28 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern":
-  [
+  "pattern": [
     "GNG",
     " S ",
     " S "
   ],
   "key":
   {
-    "G":
-    {
+    "G": {
       "item": "minecraft:golden_ingot"
     },
-    "N":
-    {
+    "N": {
       "item": "konchu:net"
     },
-    "S":
-    {
+    "S": {
       "item": "minecraft:stick"
     }
   },
-  "result":
-  {
+  "result": {
     "item": "konchu:golden_net",
     "count": 1
   }

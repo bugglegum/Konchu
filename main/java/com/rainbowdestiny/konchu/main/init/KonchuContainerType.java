@@ -1,5 +1,5 @@
 package com.rainbowdestiny.konchu.main.init;
 
-public class ContainerTypeInit {
+public class KonchuContainerType {
 
 }

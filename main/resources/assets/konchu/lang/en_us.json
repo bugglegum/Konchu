@@ -9,7 +9,12 @@
 	"item.konchu.net": "Net",
 	"item.konchu.lichen_clump": "Clump of Lichen",
 	"item.konchu.crab_shell": "Crab Shell",
-	
+	"item.konchu.rotten_bark": "Rotten Bark",
+		
 	"block.konchu.lichen_block": "Block of Lichen",
-	"block.konchu.crab_block": "Crab Block"
+	"block.konchu.crab_block": "Crab Block",
+	"block.konchu.drift_log": "Drift Log",
+	"block.konchu.drift_wood": "Drift Wood",
+	"block.konchu.infested_drift_log": "Infested Drift Log"
+	
 }

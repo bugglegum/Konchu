@@ -1,7 +1,7 @@
 package com.rainbowdestiny.konchu;
 
 import com.rainbowdestiny.konchu.client.render.entity.GardenSnailRenderer;
-import com.rainbowdestiny.konchu.main.init.EntityTypesInit;
+import com.rainbowdestiny.konchu.main.init.KonchuEntityTypes;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -15,6 +15,6 @@ public class ClientListener {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void registerRenderers(final FMLClientSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(EntityTypesInit.GARDEN_SNAIL_ENTITY.get(), GardenSnailRenderer::new);
+		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityTypes.GARDEN_SNAIL_ENTITY.get(), GardenSnailRenderer::new);
 	}
 }

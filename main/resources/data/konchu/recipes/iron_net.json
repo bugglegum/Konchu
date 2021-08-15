@@ -1,28 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern":
-  [
+  "pattern": [
     "INI",
     " S ",
     " S "
   ],
   "key":
   {
-    "I":
-    {
+    "I": {
       "item": "minecraft:iron_ingot"
     },
-    "N":
-    {
+    "N": {
       "item": "konchu:net"
     },
-    "S":
-    {
+    "S": {
       "item": "minecraft:stick"
     }
   },
-  "result":
-  {
+  "result": {
     "item": "konchu:iron_net",
     "count": 1
   }

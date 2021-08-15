@@ -8,7 +8,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 
-public class EntityTypesInit {	
+public class KonchuEntityTypes {	
 	
 	public static final RegistryObject<EntityType<GardenSnailEntity>> GARDEN_SNAIL_ENTITY = KonchuRegistry.ENTITIES.register("garden_snail", () -> EntityType.Builder.<GardenSnailEntity>of(GardenSnailEntity::new, EntityClassification.CREATURE).sized(1f,1f).build(new ResourceLocation(Konchu.MOD_ID, "garden_snail").toString()));
 }
