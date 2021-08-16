@@ -2,13 +2,17 @@
 "type": "minecraft:crafting_shaped",
   "pattern": [
     "CCC",
-    "CCC",
+    "CWC",
     "CCC"
   ],
   "key": {
     "C":
     {
       "item": "konchu:crab_shell"
+    },
+    "W":
+    {
+      "item": "minecraft:water_bucket"
     }
   },
   "result": {

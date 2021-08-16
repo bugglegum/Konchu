@@ -21,9 +21,11 @@ public class Konchu
 		@SuppressWarnings("unused")
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         KonchuRegistry.init();
-
+        
 		MinecraftForge.EVENT_BUS.register(this);
+
         GeckoLib.initialize();
+        
     }
 
 }

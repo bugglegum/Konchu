@@ -28,6 +28,7 @@ public class KonchuItems {
 
 	//Block Items
     public static final RegistryObject<Item> LICHEN_BLOCK_ITEM = KonchuRegistry.ITEMS.register("lichen_block", () -> new BlockItemBase(KonchuBlocks.LICHEN_BLOCK.get(),ItemGroup.TAB_DECORATIONS));
+    public static final RegistryObject<Item> LICHEN_GROWTH_ITEM = KonchuRegistry.ITEMS.register("lichen_growth", () -> new BlockItemBase(KonchuBlocks.LICHEN_GROWTH.get(),ItemGroup.TAB_DECORATIONS));
     public static final RegistryObject<Item> CRAB_BLOCK_ITEM = KonchuRegistry.ITEMS.register("crab_block", () -> new BlockItemBase(KonchuBlocks.CRAB_BLOCK.get(), ItemGroup.TAB_DECORATIONS));
     public static final RegistryObject<Item> DRIFT_LOG_ITEM = KonchuRegistry.ITEMS.register("drift_log", () -> new BlockItemBase(KonchuBlocks.DRIFT_LOG.get(), ItemGroup.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Item> DRIFT_WOOD_ITEM = KonchuRegistry.ITEMS.register("drift_wood", () -> new BlockItemBase(KonchuBlocks.DRIFT_WOOD.get(), ItemGroup.TAB_BUILDING_BLOCKS));
