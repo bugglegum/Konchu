@@ -10,7 +10,7 @@ import com.rainbowdestiny.konchu.client.gui.RenderingEvents.ItemRenderInfo;
 import com.rainbowdestiny.konchu.client.gui.RenderingEvents.ItemRenderInfo.ItemModelMatch;
 import com.rainbowdestiny.konchu.client.render.entity.GardenSnailRenderer;
 import com.rainbowdestiny.konchu.main.init.KonchuBlocks;
-import com.rainbowdestiny.konchu.main.init.KonchuEntityTypes;
+import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
 import com.rainbowdestiny.konchu.main.init.KonchuItems;
 
 import net.minecraft.block.BlockState;
@@ -36,7 +36,7 @@ public class ClientListener {
 	
 	@SubscribeEvent
 	public static void registerRenderers(final FMLClientSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityTypes.GARDEN_SNAIL_ENTITY.get(), GardenSnailRenderer::new);
+		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.GARDEN_SNAIL.get(), GardenSnailRenderer::new);
 	}
 	
 	@SubscribeEvent
