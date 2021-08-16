@@ -19,6 +19,7 @@ public class KonchuItems {
 	public static final RegistryObject<Item> DIAMOND_NET = KonchuRegistry.ITEMS.register("diamond_net", () -> new NetItem(70, ItemTier.DIAMOND));
 	public static final RegistryObject<Item> NETHERITE_NET = KonchuRegistry.ITEMS.register("netherite_net", () -> new NetItem(85, ItemTier.NETHERITE));
 	
+	
 	//Misc Items
 	public static final RegistryObject<Item> NET = KonchuRegistry.ITEMS.register("net", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MISC)));
 	public static final RegistryObject<Item> LICHEN_CLUMP = KonchuRegistry.ITEMS.register("lichen_clump", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_MISC)));
