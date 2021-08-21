@@ -6,15 +6,24 @@
 	"item.konchu.diamond_net": "Diamond Bug Net",
 	"item.konchu.netherite_net": "Netherite Bug Net",
 	
+	"item.konchu.frog_hat": "Frog Hat",
+	
 	"item.konchu.net": "Net",
 	"item.konchu.lichen_clump": "Clump of Lichen",
+	"item.konchu.moss_clump": "Clump of Moss",
 	"item.konchu.crab_shell": "Crab Shell",
 	"item.konchu.rotten_bark": "Rotten Bark",
 		
 	"block.konchu.lichen_block": "Block of Lichen",
+	"block.konchu.lichen_growth": "Lichen",
+	
+	"block.konchu.marimo": "Marimo",
+	
 	"block.konchu.crab_block": "Crab Block",
+	
 	"block.konchu.drift_log": "Drift Log",
 	"block.konchu.drift_wood": "Drift Wood",
-	"block.konchu.infested_drift_log": "Infested Drift Log"
+	"block.konchu.infested_drift_log": "Infested Drift Log",
 	
+	"entity.konchu.garden_snail": "Garden Snail"
 }

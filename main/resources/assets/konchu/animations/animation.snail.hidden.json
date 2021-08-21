@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.snail.hidden": {
+			"animation_length": 0.8125,
+			"bones": {
+				"Shell": {
+					"rotation": {
+						"vector": [7.5, 0, 0],
+						"easing": "easeOutBack"
+					},
+					"position": {
+						"vector": [0, -2, 0]
+					}
+				},
+				"Body": {
+					"scale": {
+						"vector": [1, 0, 0.4],
+						"easing": "easeInElastic"
+					}
+				},
+				"Head": {
+					"scale": {
+						"vector": [1, 1, 0],
+						"easing": "easeInBack"
+					}
+				},
+				"RightStalk": {
+					"scale": {
+						"vector": [1, 0, 1],
+						"easing": "easeInBack"
+					}
+				},
+				"LeftStalk": {
+					"scale": {
+						"vector": [1, 0, 1],
+						"easing": "easeInOutBack"
+					}
+				},
+				"RightSensory": {
+					"scale": {
+						"vector": [1, 1, 0],
+						"easing": "easeInBack"
+					}
+				},
+				"LeftSensory": {
+					"scale": {
+						"vector": [1, 1, 0],
+						"easing": "easeOutBack"
+					}
+				}
+			}
+		}
+	}
+}

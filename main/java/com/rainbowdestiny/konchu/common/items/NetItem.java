@@ -20,6 +20,7 @@ import net.minecraft.world.World;
 
 public class NetItem extends TieredItem{
 	
+	//Item Setup
 	private int CatchChance;
 	
 	public NetItem(int catchProbability, IItemTier tier) {
@@ -27,14 +28,16 @@ public class NetItem extends TieredItem{
         this.CatchChance = catchProbability;
 	}
 
+	//Left Click Behavior
 	@Override
     public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity) {
         World world = player.level;
         Float randomNum = RandomMath.randomRange(0,100);
         	System.out.println(randomNum);
         	System.out.println(this.CatchChance);
+        	
         	if(entity instanceof LivingEntity) {
-        		if(randomNum <= this.CatchChance){
+        		if(randomNum <= this.CatchChance) {
         			if(!world.isClientSide) {
         				CompoundNBT tag = new CompoundNBT();
 
@@ -50,24 +53,28 @@ public class NetItem extends TieredItem{
         						stack.getTag().put("caught_data", tag);
         						entity.remove();
         		        		player.displayClientMessage(new StringTextComponent(TextFormatting.GREEN + "You caught it!"), true);
-        					}else {
+        					} else {
+
         					player.displayClientMessage(new StringTextComponent(TextFormatting.RED + "Net is full!"), true);
+        					}
         				}
+        			} else {
+        				
+        			player.displayClientMessage(new StringTextComponent(TextFormatting.RED + "You missed!"), true);
         			}
-        		}else {
-        		player.displayClientMessage(new StringTextComponent(TextFormatting.RED + "You missed!"), true);
         	}
-        }
-        return true;
-	}	
+        	return true;
+		}	
     
     @SuppressWarnings("resource")
 	@Override
     public ActionResultType useOn(ItemUseContext context) {
         if(!context.getLevel().isClientSide) {
             ItemStack stack = context.getItemInHand();
+            
             if(stack.hasTag() && stack.getTag().contains("caught_data")) {
                 CompoundNBT tag = (CompoundNBT) stack.getTag().get("caught_data");
+                
                 if(tag != null) {
                     BlockPos pos = context.getClickedPos().relative(context.getClickedFace());
                     
@@ -84,6 +91,7 @@ public class NetItem extends TieredItem{
         return super.useOn(context);
     }
 
+    //Extra Assignments
 	public Object tab(ItemGroup tabTools) {
 		return null;
 	}

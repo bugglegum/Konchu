@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "moss=1": [
+      {
+        "model": "konchu:block/marimo_small"
+      }
+    ],
+    "moss=2": [
+      {
+        "model": "konchu:block/marimo_medium"
+      }
+    ],
+    "moss=3": [
+      {
+        "model": "konchu:block/marimo_big"
+      }
+    ],
+    "moss=4": [
+      {
+        "model": "konchu:block/marimo_full"
+      }
+    ],
+    "moss=5": [
+      {
+        "model": "konchu:block/marimo_full_single"
+      }
+    ],
+    "moss=6": [
+      {
+        "model": "konchu:block/marimo_full_double"
+      }
+    ],
+    "moss=7": [
+      {
+        "model": "konchu:block/marimo_full_triple"
+      }
+    ],
+    "moss=8": [
+      {
+        "model": "konchu:block/marimo_full_quad"
+      }
+    ],
+    "moss=9": [
+      {
+        "model": "konchu:block/marimo_full_penta"
+      }
+    ]
+  }
+}

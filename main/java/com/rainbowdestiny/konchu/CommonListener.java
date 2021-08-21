@@ -15,4 +15,8 @@ public class CommonListener {
 	public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
 			GlobalEntityTypeAttributes.put(KonchuEntityType.GARDEN_SNAIL.get(), GardenSnailEntity.setCustomAttributes().build());
 	}
+	
+	public void register() {
+		
+	}
 }

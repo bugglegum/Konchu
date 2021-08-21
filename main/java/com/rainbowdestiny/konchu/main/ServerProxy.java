@@ -8,9 +8,7 @@ public class ServerProxy {
     public void doServerStuff(FMLCommonSetupEvent event) {
     }
     
-    public void doClientStuff(FMLClientSetupEvent event) {
-
-    	
+    public void doClientStuff(FMLClientSetupEvent event) { 	
     }
 
 }

@@ -9,13 +9,9 @@ import com.rainbowdestiny.konchu.client.gui.RenderingEvents;
 import com.rainbowdestiny.konchu.client.gui.RenderingEvents.ItemRenderInfo;
 import com.rainbowdestiny.konchu.client.gui.RenderingEvents.ItemRenderInfo.ItemModelMatch;
 import com.rainbowdestiny.konchu.client.render.entity.GardenSnailRenderer;
-import com.rainbowdestiny.konchu.main.init.KonchuBlocks;
 import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
-import com.rainbowdestiny.konchu.main.init.KonchuItems;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.model.BakedQuad;
 import net.minecraft.client.renderer.model.IBakedModel;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
@@ -32,11 +28,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(modid = Konchu.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-public class ClientListener {
+public class ClientListener extends CommonListener {
 	
 	@SubscribeEvent
 	public static void registerRenderers(final FMLClientSetupEvent event) {
+		
 		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.GARDEN_SNAIL.get(), GardenSnailRenderer::new);
+	
 	}
 	
 	@SubscribeEvent
@@ -116,16 +114,5 @@ public class ClientListener {
 		}
 		
 	}
-
-	@SubscribeEvent
-	public static void clientSetup(FMLClientSetupEvent event) {
-			
-		RenderTypeLookup.setRenderLayer(KonchuBlocks.LICHEN_GROWTH.get(), RenderType.cutout());
-
-		RenderingEvents.ItemRenderInfo CLOTH_NET = RenderingEvents.addItemRenderer(KonchuItems.CLOTH_NET.get());
-			CLOTH_NET.addTransformType("gui", ItemCameraTransforms.TransformType.GUI);
-			CLOTH_NET.addTransformType("gui", ItemCameraTransforms.TransformType.FIXED);
-
-	}
-
+	
 }

@@ -22,11 +22,10 @@ public class BlockItemBase extends BlockItem {
         super(blockIn, new Item.Properties().tab(group));
     }        
         
-        public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-            if(!description.equals(""))
-            {
-                ItemUtils.addText(tooltip,description, TextFormatting.GREEN);
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+        if(!description.equals("")) {
+        	ItemUtils.addText(tooltip,description, TextFormatting.GREEN);
 
-            }
+        }
     }
 }
