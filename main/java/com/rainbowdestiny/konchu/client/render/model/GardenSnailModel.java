@@ -30,7 +30,6 @@ public class GardenSnailModel extends AnimatedGeoModel<GardenSnailEntity> {
 	        case 1: return BROWN;
 	        case 2: return GREEN;
 	        case 3: return GRAY;
-	        case 4: return GOLDEN;
 	        default: return BROWN;
 	        }
 	    }
@@ -38,12 +37,23 @@ public class GardenSnailModel extends AnimatedGeoModel<GardenSnailEntity> {
 	//Model Assignment
     @Override
     public ResourceLocation getModelLocation(GardenSnailEntity object) {
-        return new ResourceLocation(Konchu.MOD_ID, "geo/garden_snail.geo.json");
+        return new ResourceLocation(Konchu.MOD_ID, "geo/snail.geo.json");
     }
 
     //Animation Assignment
 	@Override
     public ResourceLocation getAnimationFileLocation(GardenSnailEntity object) {
-        return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.move.json");
-    }
+		if (!object.isHiding()) {
+			if (object.isMoving()) {
+				return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.move.json");
+			} else {
+				return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.idle.json");
+			}
+			
+		} else {
+			return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.hiding.json");
+		}
+		
+	}
+	
 }

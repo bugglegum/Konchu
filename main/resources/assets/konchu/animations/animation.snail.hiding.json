@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.snail.hiding": {
+			"loop": true,
+			"animation_length": 0.46033,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 2, 0]
+					},
+					"scale": {
+						"vector": [0.7, 0, 0.5],
+						"easing": "easeOutCirc"
+					}
+				},
+				"Shell": {
+					"rotation": {
+						"vector": [7.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -3, -1],
+						"easing": "easeInCirc"
+					}
+				},
+				"Tail": {
+					"scale": {
+						"vector": [1, 1, -0.1],
+						"easing": "easeInExpo"
+					}
+				},
+				"Head": {
+					"rotation": {
+						"vector": [32.5, 0, 0],
+						"easing": "easeInSine"
+					},
+					"scale": {
+						"vector": [1, 1, 0.2],
+						"easing": "easeInExpo"
+					}
+				},
+				"RightSensor": {
+					"scale": {
+						"vector": [1, 1, -0.1],
+						"easing": "easeInCirc"
+					}
+				},
+				"LeftEye": {
+					"rotation": {
+						"vector": [96.25, 0, 0]
+					},
+					"scale": {
+						"vector": [1, 0.1, 1],
+						"easing": "easeInCirc"
+					}
+				}
+			}
+		}
+	}
+}

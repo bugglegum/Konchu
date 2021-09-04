@@ -3,61 +3,86 @@
 	"animations": {
 		"animation.snail.idle": {
 			"loop": true,
-			"animation_length": 1,
+			"animation_length": 1.54167,
 			"bones": {
-				"RightStalk": {
+				"Shell": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [-2.5, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"RightSensor": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
 						},
 						"0.5": {
-							"vector": [0, 0, -7.5],
-							"easing": "easeOutBack"
+							"vector": [0, 0, 0],
+							"easing": "easeInSine"
 						},
 						"1.0": {
-							"vector": [0, 0, 0]
+							"vector": [0, 14.1, 0],
+							"easing": "easeInSine"
+						},
+						"1.5417": {
+							"vector": [0, 0, 0],
+							"easing": "easeInSine"
 						}
 					}
 				},
-				"LeftStalk": {
+				"LeftSensor": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -17.5, 0],
+							"easing": "easeInCirc"
+						},
+						"1.0": {
+							"vector": [0, -5, 0],
+							"easing": "easeInCirc"
+						},
+						"1.5417": {
+							"vector": [0, 0, 0],
+							"easing": "easeInCirc"
+						}
+					}
+				},
+				"RightEye": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
 						},
 						"0.5": {
 							"vector": [0, 0, 7.5],
-							"easing": "easeInBack"
+							"easing": "easeInQuad"
 						},
-						"1.0": {
-							"vector": [0, 0, 0]
+						"1.2083": {
+							"vector": [0, 0, 0],
+							"easing": "easeInQuad"
 						}
 					}
 				},
-				"RightSensory": {
+				"LeftEye": {
 					"rotation": {
-						"0.0": {
+						"0.25": {
 							"vector": [0, 0, 0]
 						},
-						"0.5": {
+						"1.0": {
 							"vector": [0, 0, -7.5],
-							"easing": "easeOutBack"
+							"easing": "easeInQuad"
 						},
-						"1.0": {
-							"vector": [0, 0, 0]
-						}
-					}
-				},
-				"LeftSensory": {
-					"rotation": {
-						"0.0": {
-							"vector": [0, 0, 0]
-						},
-						"0.5": {
-							"vector": [0, 0, 7.5],
-							"easing": "easeInBack"
-						},
-						"1.0": {
-							"vector": [0, 0, 0]
+						"1.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInQuad"
 						}
 					}
 				}
