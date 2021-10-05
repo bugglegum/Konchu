@@ -14,6 +14,8 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.SoundEvents;
 
 public class MagnifierItem extends Item {
+	//FINISH LATER
+	
 	
 	   public static final int USE_DURATION = 1200;
 	   public static final float ZOOM_FOV_MODIFIER = 0.2F;

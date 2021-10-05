@@ -2,6 +2,7 @@ package com.rainbowdestiny.konchu.main.init;
 
 import com.rainbowdestiny.konchu.common.items.BlockItemBase;
 import com.rainbowdestiny.konchu.common.items.FrogHatItem;
+import com.rainbowdestiny.konchu.common.items.KonchuSpawnEggItem;
 import com.rainbowdestiny.konchu.common.items.NetItem;
 
 import net.minecraft.inventory.EquipmentSlotType;
@@ -39,4 +40,7 @@ public class KonchuItems {
     public static final RegistryObject<Item> DRIFT_WOOD_ITEM = KonchuRegistry.ITEMS.register("drift_wood", () -> new BlockItemBase(KonchuBlocks.DRIFT_WOOD.get(), ItemGroup.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Item> INFESTED_DRIFT_LOG_ITEM = KonchuRegistry.ITEMS.register("infested_drift_log", () -> new BlockItemBase(KonchuBlocks.INFESTED_DRIFT_LOG.get(), ItemGroup.TAB_BUILDING_BLOCKS));
     
+    //Spawn Items
+    public static final RegistryObject<Item> SNAIL_SPAWN_EGG = KonchuRegistry.ITEMS.register("snail_spawn_egg", () -> new KonchuSpawnEggItem(KonchuEntityType.GARDEN_SNAIL, 9550976, 9593915, (new Item.Properties()).tab(ItemGroup.TAB_MISC)));
+
 }

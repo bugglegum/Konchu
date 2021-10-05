@@ -16,9 +16,11 @@ import net.minecraft.world.gen.treedecorator.TreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 
 public class LichenTreeDecorator extends TreeDecorator{
+	//UNFINISHED
+	
     public static final Codec<LichenTreeDecorator> CODEC;
     public static final LichenTreeDecorator DECORATOR = new LichenTreeDecorator();
-
+    
     protected TreeDecoratorType<?> treeDecorator() {
         return KonchuFeatures.LICHEN_GROWTH.get();
     }

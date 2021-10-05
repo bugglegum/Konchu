@@ -14,27 +14,27 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class FrogHatItem extends Item{
-    private EquipmentSlotType slot;
-    String description;
+	private EquipmentSlotType slot;
+	String description;
 
 	public FrogHatItem(EquipmentSlotType slot, String description, ItemGroup tab) {
-        super(new Item.Properties().tab(tab));
+		super(new Item.Properties().tab(tab));
 		this.slot = slot;
-        this.description = description;
+		this.description = description;
 	}
-	
+
 	public EquipmentSlotType getEquipmentSlot(ItemStack stack) {
 		return slot;
 	}
-	
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-        if(description != null)
-        {
-            ItemUtils.addText(tooltip, description, TextFormatting.YELLOW);
-        }
-        super.appendHoverText(stack, worldIn, tooltip, flagIn);
-    }
-    
+
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+		super.appendHoverText(stack, worldIn, tooltip, flagIn);
+		ItemUtils.addText(tooltip, description, TextFormatting.YELLOW);
+	}
+
 }
