@@ -7,7 +7,7 @@
   ],
   "key": {
     "C": {
-      "item": "minecraft:wool"
+      "tag": "minecraft:wool"
     },
     "N": {
       "item": "konchu:net"

@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frog.swim": {
+			"loop": true,
+			"animation_length": 0.54167,
+			"override_previous_animation": true,
+			"bones": {
+				"FrontLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-55, -37.5, 0]
+						},
+						"0.25": {
+							"vector": [42.5, -37.5, 0]
+						},
+						"0.5": {
+							"vector": [-55, -37.5, 0]
+						}
+					}
+				},
+				"BackLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, 0, 0]
+						},
+						"0.25": {
+							"vector": [90, 30, 0]
+						},
+						"0.5": {
+							"vector": [90, 0, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.25": {
+							"vector": [1, 1.7, 1]
+						},
+						"0.5": {
+							"vector": [1, 1, 1]
+						}
+					}
+				},
+				"FrontRightLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-60, 42.5, 0]
+						},
+						"0.25": {
+							"vector": [37.5, 42.5, 0]
+						},
+						"0.5": {
+							"vector": [-60, 42.5, 0]
+						}
+					}
+				},
+				"BackRightLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, 0, 0]
+						},
+						"0.25": {
+							"vector": [90, -30, 0]
+						},
+						"0.5": {
+							"vector": [90, 0, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 1, 1]
+						},
+						"0.25": {
+							"vector": [1, 1.7, 1]
+						},
+						"0.5": {
+							"vector": [1, 1, 1]
+						}
+					}
+				}
+			}
+		}
+	}
+}

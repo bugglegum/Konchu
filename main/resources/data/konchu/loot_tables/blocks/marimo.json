@@ -22,7 +22,7 @@
                      "conditions":[
                         {
                            "condition":"minecraft:block_state_property",
-                           "block":"minecraft:marimo",
+                           "block":"konchu:marimo",
                            "properties":{
                               "moss":"5"
                            }
@@ -46,7 +46,7 @@
                      "conditions":[
                         {
                            "condition":"minecraft:block_state_property",
-                           "block":"minecraft:marimo",
+                           "block":"konchu:marimo",
                            "properties":{
                               "moss":"6"
                            }
@@ -70,7 +70,7 @@
                      "conditions":[
                         {
                            "condition":"minecraft:block_state_property",
-                           "block":"minecraft:marimo",
+                           "block":"konchu:marimo",
                            "properties":{
                               "moss":"7"
                            }
@@ -94,7 +94,7 @@
                      "conditions":[
                         {
                            "condition":"minecraft:block_state_property",
-                           "block":"minecraft:marimo",
+                           "block":"konchu:marimo",
                            "properties":{
                               "moss":"8"
                            }
@@ -118,7 +118,7 @@
                      "conditions":[
                         {
                            "condition":"minecraft:block_state_property",
-                           "block":"minecraft:marimo",
+                           "block":"konchu:marimo",
                            "properties":{
                               "moss":"9"
                            }

@@ -1,0 +1,47 @@
+{
+    "frog.ambient": {
+        "subtitle": "konchu.frog.ambient",
+        "category": "entity",
+        "sounds": [ {
+                "name": "konchu:entity/frog_ambient",
+                "stream": false
+            }
+        ]
+    },
+    "frog.croak": {
+        "subtitle": "konchu.frog.croak",
+        "category": "entity",
+        "sounds": [ {
+                "name": "konchu:entity/frog_croak",
+                "stream": false
+            }
+        ]
+    },
+    "frog.jump": {
+        "subtitle": "konchu.frog.jump",
+        "category": "entity",
+        "sounds": [ {
+                "name": "konchu:entity/frog_jump",
+                "stream": false
+            }
+        ]
+    },
+    "frog.hurt": {
+        "subtitle": "konchu.frog.hurt",
+        "category": "entity",
+        "sounds": [ {
+                "name": "konchu:entity/frog_hurt",
+                "stream": false
+            }
+        ]
+    },
+    "frog.death": {
+        "subtitle": "konchu.frog.death",
+        "category": "entity",
+        "sounds": [ {
+                "name": "konchu:entity/frog_death",
+                "stream": false
+            }
+        ]
+    }
+}

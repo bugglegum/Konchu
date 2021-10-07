@@ -21,12 +21,14 @@ public class KonchuRegistry {
 	
 	public static KonchuBlocks Blocks;
 	public static KonchuItems Items;
+	public static KonchuSoundEvents Sounds;
 	public static KonchuEntityType Entities;
 
 	public static void init() {
 		
 		Blocks = new KonchuBlocks();
 		Items = new KonchuItems();
+		Sounds = new KonchuSoundEvents();
 		Entities = new KonchuEntityType();
 		
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());

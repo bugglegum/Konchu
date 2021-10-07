@@ -23,7 +23,7 @@ public class NetItem extends TieredItem{
 	//Item Setup
 	private int CatchChance;
 	
-	public NetItem(int catchProbability, IItemTier tier) {
+	public NetItem(int catchProbability, IItemTier tier, ItemGroup itemGroup) {
         super(tier, new Properties());
         this.CatchChance = catchProbability;
 	}

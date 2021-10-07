@@ -1,6 +1,6 @@
 package com.rainbowdestiny.konchu;
 
-import com.rainbowdestiny.konchu.common.entities.GardenSnailEntity;
+import com.rainbowdestiny.konchu.common.entities.SnailEntity;
 import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
 
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -13,10 +13,10 @@ public class CommonListener {
 	@SuppressWarnings("deprecation")
 	@SubscribeEvent
 	public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
-			GlobalEntityTypeAttributes.put(KonchuEntityType.GARDEN_SNAIL.get(), GardenSnailEntity.setCustomAttributes().build());
+			GlobalEntityTypeAttributes.put(KonchuEntityType.SNAIL.get(), SnailEntity.setCustomAttributes().build());
+			GlobalEntityTypeAttributes.put(KonchuEntityType.FROG.get(), SnailEntity.setCustomAttributes().build());
 	}
 	
 	public void register() {
-		
 	}
 }

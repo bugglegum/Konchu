@@ -13,6 +13,7 @@
 	"item.konchu.moss_clump": "Clump of Moss",
 	"item.konchu.crab_shell": "Crab Shell",
 	"item.konchu.rotten_bark": "Rotten Bark",
+	"item.konchu.frog_bucket": "Frog Bucket",
 	
 	"item.konchu.snail_spawn_egg": "Snail Spawn Egg",
 
@@ -27,5 +28,6 @@
 	"block.konchu.drift_wood": "Drift Wood",
 	"block.konchu.infested_drift_log": "Infested Drift Log",
 	
-	"entity.konchu.garden_snail": "Garden Snail"
+	"entity.konchu.snail": "Snail",
+	"entity.konchu.frog": "Frog"
 }

@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frog.mouth_close": {
+			"animation_length": 0.5,
+			"bones": {
+				"TopJaw": {
+					"rotation": {
+						"0.0": {
+							"vector": [-35, 0, 0],
+							"easing": "easeInQuad"
+						},
+						"0.0417": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1.01, 1, 1],
+							"easing": "easeInQuad"
+						},
+						"0.0417": {
+							"vector": [1, 1, 1]
+						}
+					}
+				},
+				"BottomJaw": {
+					"rotation": {
+						"0.0": {
+							"vector": [42.5, 0, 0],
+							"easing": "easeInQuad"
+						},
+						"0.0417": {
+							"vector": [0, 0, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1.01, 1, 1],
+							"easing": "easeInQuad"
+						},
+						"0.0417": {
+							"vector": [1, 1, 1]
+						}
+					}
+				},
+				"Tongue": {
+					"rotation": {
+						"vector": [42.5, 0, 0]
+					},
+					"scale": {
+						"vector": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

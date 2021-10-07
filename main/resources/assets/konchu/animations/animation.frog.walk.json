@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frog.walk": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"BackRightLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-17.5, 0, 20]
+						},
+						"0.25": {
+							"vector": [30, 0, 20]
+						},
+						"0.5": {
+							"vector": [-17.5, 0, 20]
+						}
+					}
+				},
+				"FrontRightLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [30, 0, 12.5]
+						},
+						"0.25": {
+							"vector": [-30, 0, 12.5]
+						},
+						"0.5": {
+							"vector": [30, 0, 12.5]
+						}
+					}
+				},
+				"BackLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [22.5, 0, -20]
+						},
+						"0.25": {
+							"vector": [-20, 0, -20]
+						},
+						"0.5": {
+							"vector": [22.5, 0, -20]
+						}
+					}
+				},
+				"FrontLeftLeg": {
+					"rotation": {
+						"0.0": {
+							"vector": [-17.5, 0, -12.5]
+						},
+						"0.25": {
+							"vector": [25, 0, -12.5]
+						},
+						"0.5": {
+							"vector": [-17.5, 0, -12.5]
+						}
+					}
+				}
+			}
+		}
+	}
+}

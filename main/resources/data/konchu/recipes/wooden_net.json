@@ -7,7 +7,7 @@
   ],
   "key": {
     "W": {
-      "item": "minecraft:planks"
+      "tag": "minecraft:planks"
     },
     "N": {
       "item": "konchu:net"

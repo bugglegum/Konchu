@@ -8,7 +8,8 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.rainbowdestiny.konchu.client.gui.RenderingEvents;
 import com.rainbowdestiny.konchu.client.gui.RenderingEvents.ItemRenderInfo;
 import com.rainbowdestiny.konchu.client.gui.RenderingEvents.ItemRenderInfo.ItemModelMatch;
-import com.rainbowdestiny.konchu.client.render.entity.GardenSnailRenderer;
+import com.rainbowdestiny.konchu.client.render.entity.FrogRenderer;
+import com.rainbowdestiny.konchu.client.render.entity.SnailRenderer;
 import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
 
 import net.minecraft.block.BlockState;
@@ -33,8 +34,8 @@ public class ClientListener extends CommonListener {
 	@SubscribeEvent
 	public static void registerRenderers(final FMLClientSetupEvent event) {
 		
-		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.GARDEN_SNAIL.get(), GardenSnailRenderer::new);
-	
+		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.SNAIL.get(), SnailRenderer::new);
+		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.FROG.get(), FrogRenderer::new);
 	}
 	
 	@SubscribeEvent
