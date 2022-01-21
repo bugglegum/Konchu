@@ -32,7 +32,7 @@ public class KonchuSpawnEggItem extends SpawnEggItem {
 	private final Lazy<? extends EntityType<?>> lazyEntity;
 
 	public KonchuSpawnEggItem(final RegistryObject<? extends EntityType<?>> entity, int color1, int color2, final Properties properties) {
-		super(null, 16777215, 16777215, properties);
+		super(null, color1, color2, properties);
 		this.color1 = 0;
 		this.color2 = 0;
 		this.lazyEntity = Lazy.of(entity::get);

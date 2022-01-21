@@ -13,11 +13,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class KonchuRegistry {
 
-	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Konchu.MOD_ID);
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Konchu.MOD_ID);
-	public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Konchu.MOD_ID);
-	public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, Konchu.MOD_ID);
-	public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES,Konchu.MOD_ID);
+	public static final DeferredRegister<Block> BLOCKS				= DeferredRegister.create(ForgeRegistries.BLOCKS, Konchu.MOD_ID);
+	public static final DeferredRegister<Item> ITEMS				= DeferredRegister.create(ForgeRegistries.ITEMS, Konchu.MOD_ID);
+	public static final DeferredRegister<SoundEvent> SOUNDS			= DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Konchu.MOD_ID);
+	public static final DeferredRegister<EntityType<?>> ENTITIES	= DeferredRegister.create(ForgeRegistries.ENTITIES, Konchu.MOD_ID);
+	public static final DeferredRegister<Biome> BIOMES				= DeferredRegister.create(ForgeRegistries.BIOMES,Konchu.MOD_ID);
 	
 	public static KonchuBlocks Blocks;
 	public static KonchuItems Items;
@@ -26,10 +26,10 @@ public class KonchuRegistry {
 
 	public static void init() {
 		
-		Blocks = new KonchuBlocks();
-		Items = new KonchuItems();
-		Sounds = new KonchuSoundEvents();
-		Entities = new KonchuEntityType();
+		Blocks		= new KonchuBlocks();
+		Items		= new KonchuItems();
+		Sounds		= new KonchuSoundEvents();
+		Entities	= new KonchuEntityType();
 		
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -37,5 +37,4 @@ public class KonchuRegistry {
 		ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
 		BIOMES.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
-
 }

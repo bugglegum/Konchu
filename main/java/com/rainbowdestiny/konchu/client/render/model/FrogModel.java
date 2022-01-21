@@ -4,7 +4,6 @@ import com.rainbowdestiny.konchu.Konchu;
 import com.rainbowdestiny.konchu.common.entities.FrogEntity;
 
 import net.minecraft.util.ResourceLocation;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class FrogModel extends AnimatedGeoModel<FrogEntity> {

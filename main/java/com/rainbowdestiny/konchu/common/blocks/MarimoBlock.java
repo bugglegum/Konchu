@@ -106,25 +106,15 @@ public class MarimoBlock extends BushBlock implements IGrowable, IWaterLoggable 
 	}
 	public VoxelShape getShape(BlockState state, IBlockReader reader, BlockPos pos, ISelectionContext context) {
 			switch(state.getValue(MOSS_BALL_SIZE)) {
-			case 1:
-			default:
-				return SMALL;
-			case 2:
-				return MEDIUM;
-			case 3:
-				return BIG;
-			case 4:
-				return FULL;
-			case 5:
-				return FULL_SINGLE;
-			case 6:
-				return FULL_DOUBLE;
-			case 7:
-				return FULL_TRIPLE;
-			case 8:
-				return FULL_QUAD;
-			case 9:
-				return FULL_PENTA;
+			case 1: default: return SMALL;
+			case 2: return MEDIUM;
+			case 3: return BIG;
+			case 4: return FULL;
+			case 5: return FULL_SINGLE;
+			case 6: return FULL_DOUBLE;
+			case 7: return FULL_TRIPLE;
+			case 8: return FULL_QUAD;
+			case 9: return FULL_PENTA;
 			}
 		}
 
@@ -152,5 +142,4 @@ public class MarimoBlock extends BushBlock implements IGrowable, IWaterLoggable 
 	public boolean isPathfindable(BlockState state, IBlockReader reader, BlockPos pos, PathType type) {
 		return false;
 	}
-
 }

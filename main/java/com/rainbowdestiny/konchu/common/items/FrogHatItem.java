@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class FrogHatItem extends Item{
+public class FrogHatItem extends ModeledItem {
 	private EquipmentSlotType slot;
 	String description;
 
@@ -36,5 +36,14 @@ public class FrogHatItem extends Item{
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
 		ItemUtils.addText(tooltip, description, TextFormatting.YELLOW);
 	}
+	
+	@Override
+	public RenderDimension handRendering() {
+		return RenderDimension.FLAT;
+	}
 
+	@Override
+	public RenderDimension hatRendering() {
+		return RenderDimension.MODEL;
+	}
 }

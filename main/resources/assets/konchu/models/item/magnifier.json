@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "konchu:item/cloth_net"
+    "layer0": "konchu:item/magnifier"
   }
 }

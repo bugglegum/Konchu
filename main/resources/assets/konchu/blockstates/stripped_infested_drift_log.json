@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "konchu:block/stripped_infested_drift_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "konchu:block/stripped_infested_drift_log"
+    },
+    "axis=z": {
+      "model": "konchu:block/stripped_infested_drift_log_horizontal",
+      "x": 90
+    }
+  }
+}

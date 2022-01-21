@@ -16,8 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(Konchu.MOD_ID)
-public class Konchu
-{
+public class Konchu {
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "konchu";
 
@@ -35,5 +34,4 @@ public class Konchu
     private void doClientStuff(final FMLClientSetupEvent event) {
         PROXY.doClientStuff(event);
     }
-
 }

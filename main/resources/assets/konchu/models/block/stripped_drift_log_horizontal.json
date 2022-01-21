@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column_horizontal",
+  "textures": {
+    "end": "konchu:block/stripped_drift_log_top",
+    "side": "konchu:block/stripped_drift_log"
+  }
+}

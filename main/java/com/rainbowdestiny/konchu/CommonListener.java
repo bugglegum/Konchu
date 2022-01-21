@@ -16,7 +16,4 @@ public class CommonListener {
 			GlobalEntityTypeAttributes.put(KonchuEntityType.SNAIL.get(), SnailEntity.setCustomAttributes().build());
 			GlobalEntityTypeAttributes.put(KonchuEntityType.FROG.get(), SnailEntity.setCustomAttributes().build());
 	}
-	
-	public void register() {
-	}
 }
