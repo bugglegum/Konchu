@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "top": "konchu:block/drift_door_top",
+    "bottom": "konchu:block/drift_door_bottom"
+  }
+}

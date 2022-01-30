@@ -1,7 +1,7 @@
 package com.rainbowdestiny.konchu.client.render.model;
 
 import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.common.entities.FrogEntity;
+import com.rainbowdestiny.konchu.common.entity.FrogEntity;
 
 import net.minecraft.util.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;

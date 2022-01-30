@@ -9,6 +9,12 @@
 	
 	"item.konchu.frog_hat": "Frog Hat",
 	
+	"item.konchu.rice": "Rice",
+	"item.konchu.cooked_rice": "Cooked Rice",
+	"item.konchu.rotten_rice": "Rotten Rice",
+	"item.konchu.wooden_chopsticks": "Wooden Chopsticks",
+	"item.konchu.porcelain_chopsticks": "Porcelain Chopsticks",
+
 	"item.konchu.net": "Net",
 	"item.konchu.lichen_clump": "Clump of Lichen",
 	"item.konchu.moss_clump": "Clump of Moss",
@@ -21,21 +27,36 @@
 
 	"block.konchu.lichen_block": "Block of Lichen",
 	"block.konchu.lichen_growth": "Lichen",
+
+	"block.konchu.sugar_cane_tatami": "Sugar Cane Tatami",	
+	"block.konchu.bamboo_tatami": "Bamboo Tatami",
 	
 	"block.konchu.marimo": "Marimo",
-	
+	"block.konchu.rice_cooker": "Rice Cooker",
+	"block.konchu.cobblestone_shrine_lantern": "Cobblestone Shrine Lantern",
+	"block.konchu.cobblestone_shrine_pagoda": "Cobblestone Shrine Pagoda",
 	"block.konchu.crab_block": "Crab Block",
-	
-	"block.konchu.stripped_drift_log": "Stripped Drift Log",
-	"block.konchu.stripped_drift_wood": "Stripped Drift Wood",
-	"block.konchu.drift_log": "Drift Log",
-	"block.konchu.drift_wood": "Drift Wood",
-	
+		
 	"block.konchu.stripped_infested_drift_log": "Stripped Infested Drift Log",
 	"block.konchu.stripped_infested_drift_wood": "Stripped Infested Drift Wood",
 	"block.konchu.infested_drift_log": "Infested Drift Log",
 	"block.konchu.infested_drift_wood": "Infested Drift Wood",
 	
+	"block.konchu.stripped_drift_log": "Stripped Drift Log",
+	"block.konchu.stripped_drift_wood": "Stripped Drift Wood",
+	"block.konchu.drift_log": "Drift Log",
+	"block.konchu.drift_wood": "Drift Wood",
+	"block.konchu.drift_planks": "Drift Planks",
+	"block.konchu.drift_stairs": "Drift Stairs",
+	"block.konchu.drift_slab": "Drift Slab",
+	"block.konchu.drift_pressure_plate": "Drift Pressure Plate",
+	"block.konchu.drift_button": "Drift Button",
+	"block.konchu.drift_door": "Drift Door",
+	"block.konchu.drift_trapdoor": "Drift Trapdoor",
+	"block.konchu.drift_fence": "Drift Fence",
+	"block.konchu.drift_fence_gate": "Drift Fence Gate",
+	"block.konchu.drift_sign": "Drift Sign",
+
 	"entity.konchu.snail": "Snail",
 	"entity.konchu.frog": "Frog"
 }

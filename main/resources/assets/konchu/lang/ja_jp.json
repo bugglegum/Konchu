@@ -1,0 +1,62 @@
+{
+	"item.konchu.wooden_net": "木ネット",
+	"item.konchu.cloth_net": "?ネット",
+	"item.konchu.iron_net": "鉄ネット",
+	"item.konchu.golden_net": "金ネット",
+	"item.konchu.diamond_net": "ダイヤモンネット",
+	"item.konchu.netherite_net": "ネザライトネット",
+	"item.konchu.magnifier": "虫眼鏡",
+	
+	"item.konchu.frog_hat": "かえるの兜",
+	
+	"item.konchu.rice": "お米",
+	"item.konchu.cooked_rice": "ご飯",
+	"item.konchu.rotten_rice": "悪くなった米",
+	"item.konchu.wooden_chopsticks": "木箸",
+	"item.konchu.porcelain_chopsticks": "磁器箸",
+
+	"item.konchu.net": "網",
+	"item.konchu.lichen_clump": "地衣のブロック",
+	"item.konchu.moss_clump": "",
+	"item.konchu.crab_shell": "",
+	"item.konchu.rotten_bark": "",
+	"item.konchu.frog_bucket": "かえるバケツ",
+	
+	"item.konchu.snail_spawn_egg": "",
+	"item.konchu.frog_spawn_egg": "",
+
+	"block.konchu.lichen_block": "地衣のブロック",
+	"block.konchu.lichen_growth": "",
+
+	"block.konchu.sugar_cane_tatami": "",	
+	"block.konchu.bamboo_tatami": "",
+	
+	"block.konchu.marimo": "",
+	"block.konchu.rice_cooker": "",
+	"block.konchu.cobblestone_shrine_lantern": "",
+	"block.konchu.cobblestone_shrine_pagoda": "",
+	"block.konchu.crab_block": "",
+		
+	"block.konchu.stripped_infested_drift_log": "Stripped Infested Drift Log",
+	"block.konchu.stripped_infested_drift_wood": "Stripped Infested Drift Wood",
+	"block.konchu.infested_drift_log": "Infested Drift Log",
+	"block.konchu.infested_drift_wood": "Infested Drift Wood",
+	
+	"block.konchu.stripped_drift_log": "Stripped Drift Log",
+	"block.konchu.stripped_drift_wood": "Stripped Drift Wood",
+	"block.konchu.drift_log": "Drift Log",
+	"block.konchu.drift_wood": "Drift Wood",
+	"block.konchu.drift_planks": "Drift Planks",
+	"block.konchu.drift_stairs": "Drift Stairs",
+	"block.konchu.drift_slab": "Drift Slab",
+	"block.konchu.drift_pressure_plate": "Drift Pressure Plate",
+	"block.konchu.drift_button": "Drift Button",
+	"block.konchu.drift_door": "Drift Door",
+	"block.konchu.drift_trapdoor": "Drift Trapdoor",
+	"block.konchu.drift_fence": "Drift Fence",
+	"block.konchu.drift_fence_gate": "Drift Fence Gate",
+	"block.konchu.drift_sign": "Drift Sign",
+
+	"entity.konchu.snail": "",
+	"entity.konchu.frog": ""
+}

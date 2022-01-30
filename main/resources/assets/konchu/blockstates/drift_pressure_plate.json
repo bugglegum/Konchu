@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "konchu:block/drift_pressure_plate"
+    },
+    "powered=true": {
+      "model": "konchu:block/drift_pressure_plate_down"
+    }
+  }
+}

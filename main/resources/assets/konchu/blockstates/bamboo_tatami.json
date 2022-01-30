@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=down,paired=false":  { "model": "konchu:block/bamboo_tatami", "x": 180 },
+    "facing=up,paired=false":    { "model": "konchu:block/bamboo_tatami"},
+    "facing=north,paired=false": { "model": "konchu:block/bamboo_tatami", "x": 90 },
+    "facing=south,paired=false": { "model": "konchu:block/bamboo_tatami", "x": 90, "y": 180 },
+    "facing=west,paired=false":  { "model": "konchu:block/bamboo_tatami", "x": 90, "y": 270 },
+    "facing=east,paired=false":  { "model": "konchu:block/bamboo_tatami", "x": 90, "y": 90 },
+    "facing=down,paired=true":  { "model": "konchu:block/bamboo_tatami_half", "x": 180 },
+    "facing=up,paired=true":    { "model": "konchu:block/bamboo_tatami_half" },
+    "facing=north,paired=true": { "model": "konchu:block/bamboo_tatami_half", "x": 90 },
+    "facing=south,paired=true": { "model": "konchu:block/bamboo_tatami_half", "x": 90, "y": 180 },
+    "facing=west,paired=true":  { "model": "konchu:block/bamboo_tatami_half", "x": 90, "y": 270 },
+    "facing=east,paired=true":  { "model": "konchu:block/bamboo_tatami_half", "x": 90, "y": 90 }
+  }
+}

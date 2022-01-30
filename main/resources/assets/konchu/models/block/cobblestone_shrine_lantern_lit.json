@@ -1,0 +1,6 @@
+{
+  "parent": "konchu:block/cobblestone_shrine_lantern",
+  "textures": {
+    "2": "konchu:block/cobblestone_shrine_lantern_lit"
+  }
+}

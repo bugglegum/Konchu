@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "konchu:block/drift_slab"
+    },
+    "type=double": {
+      "model": "konchu:block/drift_planks"
+    },
+    "type=top": {
+      "model": "konchu:block/drift_slab_top"
+    }
+  }
+}

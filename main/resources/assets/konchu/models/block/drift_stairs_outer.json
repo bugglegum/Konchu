@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs_outer",
+  "textures": {
+    "bottom": "konchu:block/drift_planks",
+    "top": "konchu:block/drift_planks",
+    "side": "konchu:block/drift_planks"
+  }
+}

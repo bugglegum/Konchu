@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north,lit=false,soul_lit=false": { "model": "konchu:block/cobblestone_shrine_lantern" },
+    "facing=south,lit=false,soul_lit=false": { "model": "konchu:block/cobblestone_shrine_lantern", "y": 180 },
+    "facing=west,lit=false,soul_lit=false":  { "model": "konchu:block/cobblestone_shrine_lantern", "y": 270 },
+    "facing=east,lit=false,soul_lit=false":  { "model": "konchu:block/cobblestone_shrine_lantern", "y": 90 },
+    "facing=north,lit=true,soul_lit=false": { "model": "konchu:block/cobblestone_shrine_lantern_lit" },
+    "facing=south,lit=true,soul_lit=false": { "model": "konchu:block/cobblestone_shrine_lantern_lit", "y": 180 },
+    "facing=west,lit=true,soul_lit=false":  { "model": "konchu:block/cobblestone_shrine_lantern_lit", "y": 270 },
+    "facing=east,lit=true,soul_lit=false":  { "model": "konchu:block/cobblestone_shrine_lantern_lit", "y": 90 },
+    "facing=north,lit=false,soul_lit=true": { "model": "konchu:block/cobblestone_shrine_lantern_soul_lit" },
+    "facing=south,lit=false,soul_lit=true": { "model": "konchu:block/cobblestone_shrine_lantern_soul_lit", "y": 180 },
+    "facing=west,lit=false,soul_lit=true":  { "model": "konchu:block/cobblestone_shrine_lantern_soul_lit", "y": 270 },
+    "facing=east,lit=false,soul_lit=true":  { "model": "konchu:block/cobblestone_shrine_lantern_soul_lit", "y": 90 }
+  }
+}

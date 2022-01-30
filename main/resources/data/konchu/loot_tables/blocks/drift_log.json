@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "konchu:infested_drift_log"
+              "name": "konchu:drift_log"
             },
             {
               "type": "minecraft:alternatives",
