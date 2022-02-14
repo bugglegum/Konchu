@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "top": "konchu:block/cherry_door_top",
+    "bottom": "konchu:block/cherry_door_bottom"
+  }
+}

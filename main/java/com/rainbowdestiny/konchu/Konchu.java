@@ -7,8 +7,10 @@ import com.rainbowdestiny.konchu.main.ClientProxy;
 import com.rainbowdestiny.konchu.main.GeckoLib;
 import com.rainbowdestiny.konchu.main.ServerProxy;
 import com.rainbowdestiny.konchu.main.init.KonchuRegistry;
+import com.rainbowdestiny.konchu.world.OreGeneration;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
@@ -26,12 +28,13 @@ public class Konchu {
     public Konchu() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         KonchuRegistry.init();
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
 		MinecraftForge.EVENT_BUS.register(this);
         GeckoLib.initialize();
-        bus.addListener(this::doClientStuff);
+        bus.addListener(this::clientSetup);
     }
     
-    private void doClientStuff(final FMLClientSetupEvent event) {
-        PROXY.doClientStuff(event);
+    private void clientSetup(final FMLClientSetupEvent event) {
+        PROXY.clientSetup(event);
     }
 }

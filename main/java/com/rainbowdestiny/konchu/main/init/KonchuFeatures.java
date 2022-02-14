@@ -1,7 +1,7 @@
 package com.rainbowdestiny.konchu.main.init;
 
 import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.common.world.gen.LichenTreeDecorator;
+import com.rainbowdestiny.konchu.world.LichenTreeDecorator;
 
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraftforge.fml.RegistryObject;

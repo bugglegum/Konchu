@@ -1,0 +1,8 @@
+{
+  "parent": "konchu:block/paper_lantern",
+  "textures": {
+    "color": "konchu:block/magenta_paper_lantern",
+    "face": "konchu:block/magenta_paper_lantern_front",
+    "particle": "konchu:block/magenta_paper_lantern"
+  }
+}

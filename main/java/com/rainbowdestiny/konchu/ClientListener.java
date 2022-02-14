@@ -1,5 +1,6 @@
 package com.rainbowdestiny.konchu;
 
+import com.rainbowdestiny.konchu.client.render.entity.EmptyRenderer;
 import com.rainbowdestiny.konchu.client.render.entity.FrogRenderer;
 import com.rainbowdestiny.konchu.client.render.entity.SnailRenderer;
 import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
@@ -15,7 +16,7 @@ public class ClientListener extends CommonListener {
 	
 	@SubscribeEvent
 	public static void registerRenderers(final FMLClientSetupEvent event) {
-		
+		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.CHAIR.get(), EmptyRenderer::new);
 		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.SNAIL.get(), SnailRenderer::new);
 		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.FROG.get(), FrogRenderer::new);
 	}

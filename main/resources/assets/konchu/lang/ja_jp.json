@@ -1,10 +1,6 @@
 {
-	"item.konchu.wooden_net": "木ネット",
-	"item.konchu.cloth_net": "?ネット",
-	"item.konchu.iron_net": "鉄ネット",
+	"item.konchu.net": "ネット",
 	"item.konchu.golden_net": "金ネット",
-	"item.konchu.diamond_net": "ダイヤモンネット",
-	"item.konchu.netherite_net": "ネザライトネット",
 	"item.konchu.magnifier": "虫眼鏡",
 	
 	"item.konchu.frog_hat": "かえるの兜",

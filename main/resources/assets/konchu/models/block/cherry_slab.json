@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "konchu:block/cherry_planks",
+    "top": "konchu:block/cherry_planks",
+    "side": "konchu:block/cherry_planks"
+  }
+}

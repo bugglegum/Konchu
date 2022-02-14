@@ -1,7 +1,7 @@
 package com.rainbowdestiny.konchu.client.render.model;
 
 import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.common.entity.SnailEntity;
+import com.rainbowdestiny.konchu.entity.SnailEntity;
 
 import net.minecraft.util.ResourceLocation;
 import software.bernie.geckolib3.model.AnimatedGeoModel;

@@ -15,6 +15,10 @@ public class KonchuSoundEvents {
 	public static final RegistryObject<SoundEvent> FROG_JUMP	= buildSound(KonchuRegistry.SOUNDS, "frog.jump");
 	public static final RegistryObject<SoundEvent> FROG_HURT	= buildSound(KonchuRegistry.SOUNDS, "frog.hurt");
 	public static final RegistryObject<SoundEvent> FROG_DEATH	= buildSound(KonchuRegistry.SOUNDS, "frog.death");
+	
+	public static final RegistryObject<SoundEvent> MUSIC_DISC_HELIX		= buildSound(KonchuRegistry.SOUNDS, "music_disc.helix");
+	public static final RegistryObject<SoundEvent> MUSIC_DISC_SUBURBAN	= buildSound(KonchuRegistry.SOUNDS, "music_disc.suburban");
+
 	public static SoundType addSoundType(float vol, float pitch, java.util.function.Supplier<SoundEvent> soundSupplier) {
 		return new SoundTypeBetter(vol, pitch, soundSupplier);
 	}

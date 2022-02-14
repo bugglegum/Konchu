@@ -43,5 +43,23 @@
                 "stream": false
             }
         ]
+    },
+    "music_disc.helix": {
+        "subtitle": "music_disc.helix",
+        "category": "music",
+        "sounds": [ {
+                "name": "konchu:music/helix",
+                "stream": true
+            }
+        ]
+    },
+    "music_disc.suburban": {
+        "subtitle": "music_disc.suburban",
+        "category": "music",
+        "sounds": [ {
+                "name": "konchu:music/suburban",
+                "stream": true
+            }
+        ]
     }
 }

@@ -1,6 +1,7 @@
 package com.rainbowdestiny.konchu.main.init;
 
 import com.rainbowdestiny.konchu.Konchu;
+import com.rainbowdestiny.konchu.world.KonchuBiomes;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
@@ -27,7 +28,7 @@ public class KonchuRegistry {
 	@SuppressWarnings("rawtypes")
 	public static KonchuTileEntityType TileEntityType;
 	public static KonchuEntityType Entities;
-	public static KonchuEntityType Biomes;
+	public static KonchuBiomes Biomes;
 
 	@SuppressWarnings("rawtypes")
 	public static void init() {
@@ -37,13 +38,15 @@ public class KonchuRegistry {
 		Sounds			= new KonchuSoundEvents();
 		TileEntityType	= new KonchuTileEntityType();
 		Entities		= new KonchuEntityType();
-		//Biomes		= new KonchuBiome();
-
-		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		SOUNDS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		TILE_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
-		ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
-		BIOMES.register(FMLJavaModLoadingContext.get().getModEventBus());
+		Biomes			= new KonchuBiomes();
+		
+		KonchuBiomes.registerBiomes();
+		
+		BLOCKS.register			(FMLJavaModLoadingContext.get().getModEventBus());
+		ITEMS.register			(FMLJavaModLoadingContext.get().getModEventBus());
+		SOUNDS.register			(FMLJavaModLoadingContext.get().getModEventBus());
+		TILE_ENTITIES.register	(FMLJavaModLoadingContext.get().getModEventBus());
+		ENTITIES.register		(FMLJavaModLoadingContext.get().getModEventBus());
+		BIOMES.register			(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 }

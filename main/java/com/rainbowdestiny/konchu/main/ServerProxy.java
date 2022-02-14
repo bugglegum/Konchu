@@ -5,9 +5,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
 public class ServerProxy {
 
-    public void doServerStuff(FMLCommonSetupEvent event) {
+    public void commonSetup(FMLCommonSetupEvent event) {
     }
     
-    public void doClientStuff(FMLClientSetupEvent event) { 	
+    public void clientSetup(FMLClientSetupEvent event) { 	
     }
 }

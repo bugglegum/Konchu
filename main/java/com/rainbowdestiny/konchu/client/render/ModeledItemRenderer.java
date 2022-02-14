@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.rainbowdestiny.konchu.common.item.ModeledItem;
+import com.rainbowdestiny.konchu.item.ModeledItem;
 
 import net.minecraft.client.renderer.model.IBakedModel;
 import net.minecraft.client.renderer.model.ItemCameraTransforms.TransformType;

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column_horizontal",
+  "textures": {
+    "end": "konchu:block/cherry_log_top",
+    "side": "konchu:block/cherry_log"
+  }
+}

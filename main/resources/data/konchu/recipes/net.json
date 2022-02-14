@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CSC",
+    " S "
+  ],
+  "key": {
+    "C": {
+      "tag": "minecraft:string"
+    },
+    "N": {
+      "item": "konchu:net"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "konchu:net",
+    "count": 1
+  }
+}

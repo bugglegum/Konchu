@@ -2,7 +2,7 @@ package com.rainbowdestiny.konchu.client.render.block;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.rainbowdestiny.konchu.common.tileentity.BaseTileEntity;
+import com.rainbowdestiny.konchu.tileentity.BaseTileEntity;
 
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
