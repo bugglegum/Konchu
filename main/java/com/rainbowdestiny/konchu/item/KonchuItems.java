@@ -89,8 +89,8 @@ public class KonchuItems {
     public static final RegistryObject<Item> CHERRY_FENCE_ITEM 					= KonchuRegistry.ITEMS.register("cherry_fence", 				() -> new ProxyBlockItem(KonchuBlocks.CHERRY_FENCE.get(), 				ItemGroup.TAB_DECORATIONS));
     public static final RegistryObject<Item> CHERRY_FENCE_GATE_ITEM 			= KonchuRegistry.ITEMS.register("cherry_fence_gate", 			() -> new ProxyBlockItem(KonchuBlocks.CHERRY_FENCE_GATE.get(), 			ItemGroup.TAB_REDSTONE));
     public static final RegistryObject<Item> CHERRY_BUTTON_ITEM 				= KonchuRegistry.ITEMS.register("cherry_button", 				() -> new ProxyBlockItem(KonchuBlocks.CHERRY_BUTTON.get(), 				ItemGroup.TAB_REDSTONE));
-    public static final RegistryObject<Item> CHERRY_PRESSURE_PLATE_ITEM 		= KonchuRegistry.ITEMS.register("cherry_pressure_plate",		() -> new ProxyBlockItem(KonchuBlocks.CHERRY_LEAVES.get(), 				ItemGroup.TAB_REDSTONE));
-    public static final RegistryObject<Item> CHERRY_LEAVES 						= KonchuRegistry.ITEMS.register("cherry_leaves",				() -> new ProxyBlockItem(KonchuBlocks.MARIMO.get(), 						ItemGroup.TAB_DECORATIONS));
+    public static final RegistryObject<Item> CHERRY_PRESSURE_PLATE_ITEM 		= KonchuRegistry.ITEMS.register("cherry_pressure_plate",		() -> new ProxyBlockItem(KonchuBlocks.CHERRY_PRESSURE_PLATE.get(), 				ItemGroup.TAB_REDSTONE));
+    public static final RegistryObject<Item> CHERRY_LEAVES 						= KonchuRegistry.ITEMS.register("cherry_leaves",				() -> new ProxyBlockItem(KonchuBlocks.CHERRY_LEAVES.get(), 						ItemGroup.TAB_DECORATIONS));
     public static final RegistryObject<Item> MARIMO_ITEM 						= KonchuRegistry.ITEMS.register("marimo", 						() -> new ProxyBlockItem(KonchuBlocks.MARIMO.get(), 						ItemGroup.TAB_DECORATIONS));
     public static final RegistryObject<Item> CRAB_BLOCK_ITEM 					= KonchuRegistry.ITEMS.register("crab_block", 					() -> new ProxyBlockItem(KonchuBlocks.CRAB_BLOCK.get(), 					ItemGroup.TAB_DECORATIONS));
     
