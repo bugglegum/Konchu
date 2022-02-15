@@ -2,8 +2,7 @@ package com.rainbowdestiny.konchu.entity;
 
 import javax.annotation.Nullable;
 
-import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
-import com.rainbowdestiny.konchu.main.util.goals.HidingGoal;
+import com.rainbowdestiny.konchu.util.goals.HidingGoal;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.AgeableEntity;

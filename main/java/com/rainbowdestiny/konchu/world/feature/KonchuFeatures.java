@@ -1,7 +1,6 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu.world.feature;
 
 import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.world.LichenTreeDecorator;
 
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraftforge.fml.RegistryObject;
@@ -13,6 +12,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class KonchuFeatures {
     public static final DeferredRegister<TreeDecoratorType<?>> TREE_DECORATORS = DeferredRegister.create(ForgeRegistries.TREE_DECORATOR_TYPES, Konchu.MOD_ID);
 
-    public static final RegistryObject<TreeDecoratorType<?>> LICHEN_GROWTH = TREE_DECORATORS.register("lichen_growth", () -> new TreeDecoratorType<>(LichenTreeDecorator.CODEC));
+    public static final RegistryObject<TreeDecoratorType<?>> LICHEN_GROWTH = TREE_DECORATORS.register("lichen_growth", () -> new TreeDecoratorType<>(LichenGrowthFeature.CODEC));
 }
     

@@ -3,7 +3,7 @@ package com.rainbowdestiny.konchu;
 import com.rainbowdestiny.konchu.client.render.entity.EmptyRenderer;
 import com.rainbowdestiny.konchu.client.render.entity.FrogRenderer;
 import com.rainbowdestiny.konchu.client.render.entity.SnailRenderer;
-import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
+import com.rainbowdestiny.konchu.entity.KonchuEntityType;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

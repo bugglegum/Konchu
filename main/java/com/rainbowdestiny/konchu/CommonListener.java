@@ -1,8 +1,8 @@
 package com.rainbowdestiny.konchu;
 
 import com.rainbowdestiny.konchu.entity.FrogEntity;
+import com.rainbowdestiny.konchu.entity.KonchuEntityType;
 import com.rainbowdestiny.konchu.entity.SnailEntity;
-import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
 
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;

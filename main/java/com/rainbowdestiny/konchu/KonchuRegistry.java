@@ -1,7 +1,11 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu;
 
-import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.world.KonchuBiomes;
+import com.rainbowdestiny.konchu.block.KonchuBlocks;
+import com.rainbowdestiny.konchu.entity.KonchuEntityType;
+import com.rainbowdestiny.konchu.item.KonchuItems;
+import com.rainbowdestiny.konchu.tileentity.KonchuTileEntityType;
+import com.rainbowdestiny.konchu.util.KonchuSoundEvents;
+import com.rainbowdestiny.konchu.world.biome.KonchuBiomes;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
@@ -14,7 +18,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class KonchuRegistry {
-
 	public static final DeferredRegister<Block> BLOCKS						= DeferredRegister.create(ForgeRegistries.BLOCKS, Konchu.MOD_ID);
 	public static final DeferredRegister<Item> ITEMS						= DeferredRegister.create(ForgeRegistries.ITEMS, Konchu.MOD_ID);
 	public static final DeferredRegister<SoundEvent> SOUNDS					= DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Konchu.MOD_ID);
@@ -39,14 +42,14 @@ public class KonchuRegistry {
 		TileEntityType	= new KonchuTileEntityType();
 		Entities		= new KonchuEntityType();
 		Biomes			= new KonchuBiomes();
-		
-		KonchuBiomes.registerBiomes();
-		
+				
 		BLOCKS.register			(FMLJavaModLoadingContext.get().getModEventBus());
 		ITEMS.register			(FMLJavaModLoadingContext.get().getModEventBus());
 		SOUNDS.register			(FMLJavaModLoadingContext.get().getModEventBus());
 		TILE_ENTITIES.register	(FMLJavaModLoadingContext.get().getModEventBus());
 		ENTITIES.register		(FMLJavaModLoadingContext.get().getModEventBus());
 		BIOMES.register			(FMLJavaModLoadingContext.get().getModEventBus());
+		
+		KonchuBiomes.registerBiomes();
 	}
 }

@@ -1,6 +1,7 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu.util;
 
 import com.rainbowdestiny.konchu.Konchu;
+import com.rainbowdestiny.konchu.KonchuRegistry;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.util.ResourceLocation;

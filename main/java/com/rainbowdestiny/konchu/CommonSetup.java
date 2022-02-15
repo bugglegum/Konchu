@@ -1,10 +1,9 @@
-package com.rainbowdestiny.konchu.main;
+package com.rainbowdestiny.konchu;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
-public class ServerProxy {
-
+public class CommonSetup {
     public void commonSetup(FMLCommonSetupEvent event) {
     }
     

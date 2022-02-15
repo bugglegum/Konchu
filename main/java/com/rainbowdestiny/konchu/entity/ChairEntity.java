@@ -2,8 +2,6 @@ package com.rainbowdestiny.konchu.entity;
 
 import java.util.List;
 
-import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;

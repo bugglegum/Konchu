@@ -1,4 +1,4 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu.tileentity;
 
 import com.rainbowdestiny.konchu.Konchu;
 

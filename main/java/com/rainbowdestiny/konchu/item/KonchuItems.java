@@ -1,10 +1,9 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu.item;
 
-import com.rainbowdestiny.konchu.item.ProxyBlockItem;
-import com.rainbowdestiny.konchu.item.FrogHatItem;
-import com.rainbowdestiny.konchu.item.MagnifierItem;
-import com.rainbowdestiny.konchu.item.NetItem;
-import com.rainbowdestiny.konchu.item.ProxySpawnEggItem;
+import com.rainbowdestiny.konchu.KonchuRegistry;
+import com.rainbowdestiny.konchu.block.KonchuBlocks;
+import com.rainbowdestiny.konchu.entity.KonchuEntityType;
+import com.rainbowdestiny.konchu.util.KonchuSoundEvents;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;

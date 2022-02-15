@@ -1,15 +1,6 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu.block;
 
-import com.rainbowdestiny.konchu.block.ChairBlock;
-import com.rainbowdestiny.konchu.block.LogBlock;
-import com.rainbowdestiny.konchu.block.MarimoBlock;
-import com.rainbowdestiny.konchu.block.PaperLanternBlock;
-import com.rainbowdestiny.konchu.block.RiceCookerBlock;
-import com.rainbowdestiny.konchu.block.RotatedBlock;
-import com.rainbowdestiny.konchu.block.ShrineLanternBlock;
-import com.rainbowdestiny.konchu.block.ShrinePagodaBlock;
-import com.rainbowdestiny.konchu.block.StairsBlock;
-import com.rainbowdestiny.konchu.block.TatamiBlock;
+import com.rainbowdestiny.konchu.KonchuRegistry;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

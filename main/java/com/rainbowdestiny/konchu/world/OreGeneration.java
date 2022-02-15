@@ -1,6 +1,6 @@
 package com.rainbowdestiny.konchu.world;
 
-import com.rainbowdestiny.konchu.main.init.KonchuBlocks;
+import com.rainbowdestiny.konchu.block.KonchuBlocks;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;

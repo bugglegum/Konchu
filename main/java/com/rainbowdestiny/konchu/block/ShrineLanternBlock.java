@@ -2,8 +2,6 @@ package com.rainbowdestiny.konchu.block;
 
 import java.util.Random;
 
-import com.rainbowdestiny.konchu.main.init.KonchuBlocks;
-
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

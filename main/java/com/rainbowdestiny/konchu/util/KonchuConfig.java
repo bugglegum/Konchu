@@ -1,5 +1,5 @@
 
-package com.rainbowdestiny.konchu.main;
+package com.rainbowdestiny.konchu.util;
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.rainbowdestiny.konchu.Konchu;

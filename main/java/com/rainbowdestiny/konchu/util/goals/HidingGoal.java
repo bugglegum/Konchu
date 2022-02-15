@@ -1,4 +1,4 @@
-package com.rainbowdestiny.konchu.main.util.goals;
+package com.rainbowdestiny.konchu.util.goals;
 
 import java.util.EnumSet;
 

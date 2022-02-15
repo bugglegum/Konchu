@@ -1,13 +1,13 @@
-package com.rainbowdestiny.konchu.main;
+package com.rainbowdestiny.konchu;
 
+import com.rainbowdestiny.konchu.block.KonchuBlocks;
 import com.rainbowdestiny.konchu.client.init.ModeledItems;
-import com.rainbowdestiny.konchu.main.init.KonchuBlocks;
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-public class ClientProxy extends ServerProxy {
+public class ClientSetup extends CommonSetup {
 
     public void clientSetup(FMLClientSetupEvent event) {
     	ModeledItems.registerItems();

@@ -1,4 +1,4 @@
-package com.rainbowdestiny.konchu.main.util;
+package com.rainbowdestiny.konchu.util;
 
 import java.util.List;
 import java.util.logging.Level;

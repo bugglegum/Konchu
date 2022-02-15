@@ -3,10 +3,7 @@ package com.rainbowdestiny.konchu;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.rainbowdestiny.konchu.main.ClientProxy;
-import com.rainbowdestiny.konchu.main.GeckoLib;
-import com.rainbowdestiny.konchu.main.ServerProxy;
-import com.rainbowdestiny.konchu.main.init.KonchuRegistry;
+import com.rainbowdestiny.konchu.util.GeckoLib;
 import com.rainbowdestiny.konchu.world.OreGeneration;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -23,7 +20,7 @@ public class Konchu {
     public static final String MOD_ID = "konchu";
 
     @SuppressWarnings("deprecation")
-	public static final ServerProxy PROXY = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
+	public static final CommonSetup PROXY = DistExecutor.runForDist(() -> ClientSetup::new, () -> CommonSetup::new);
     
     public Konchu() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();

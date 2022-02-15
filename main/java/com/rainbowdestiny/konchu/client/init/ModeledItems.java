@@ -1,7 +1,7 @@
 package com.rainbowdestiny.konchu.client.init;
 
 import com.rainbowdestiny.konchu.client.render.ModeledItemRenderer;
-import com.rainbowdestiny.konchu.main.init.KonchuItems;
+import com.rainbowdestiny.konchu.item.KonchuItems;
 
 public class ModeledItems {
 	public static void registerItems() {

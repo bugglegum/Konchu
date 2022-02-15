@@ -1,8 +1,8 @@
-package com.rainbowdestiny.konchu.world;
+package com.rainbowdestiny.konchu.world.biome;
 
 import com.google.common.base.Supplier;
 import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.main.init.KonchuRegistry;
+import com.rainbowdestiny.konchu.KonchuRegistry;
 
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
@@ -15,7 +15,6 @@ import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.fml.RegistryObject;
 
 public class KonchuBiomes {
-	
 	public static RegistryKey<Biome> CHERRY_FOREST = registerBiome("cherry_forest");
 
 	static {

@@ -2,7 +2,7 @@ package com.rainbowdestiny.konchu.item;
 
 import javax.annotation.Nullable;
 
-import com.rainbowdestiny.konchu.main.util.RandomMath;
+import com.rainbowdestiny.konchu.util.RandomMath;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

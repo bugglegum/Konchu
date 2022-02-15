@@ -4,7 +4,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.rainbowdestiny.konchu.main.util.ItemUtils;
+import com.rainbowdestiny.konchu.util.ItemUtils;
 
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.inventory.EquipmentSlotType;

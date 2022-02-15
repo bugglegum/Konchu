@@ -2,7 +2,7 @@ package com.rainbowdestiny.konchu.item;
 
 import java.util.logging.Level;
 
-import com.rainbowdestiny.konchu.main.util.ItemUtils;
+import com.rainbowdestiny.konchu.util.ItemUtils;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;

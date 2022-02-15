@@ -2,8 +2,7 @@ package com.rainbowdestiny.konchu.entity;
 
 import javax.annotation.Nullable;
 
-import com.rainbowdestiny.konchu.main.init.KonchuEntityType;
-import com.rainbowdestiny.konchu.main.init.KonchuSoundEvents;
+import com.rainbowdestiny.konchu.util.KonchuSoundEvents;
 
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.entity.EntitySize;

@@ -1,9 +1,7 @@
-package com.rainbowdestiny.konchu.main.init;
+package com.rainbowdestiny.konchu.entity;
 
 import com.rainbowdestiny.konchu.Konchu;
-import com.rainbowdestiny.konchu.entity.ChairEntity;
-import com.rainbowdestiny.konchu.entity.FrogEntity;
-import com.rainbowdestiny.konchu.entity.SnailEntity;
+import com.rainbowdestiny.konchu.KonchuRegistry;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
