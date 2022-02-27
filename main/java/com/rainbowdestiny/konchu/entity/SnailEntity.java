@@ -28,6 +28,8 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.pathfinding.ClimberPathNavigator;
+import net.minecraft.pathfinding.PathNavigator;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EntityPredicates;
 import net.minecraft.world.DifficultyInstance;
@@ -49,6 +51,7 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 	private static final DataParameter<Boolean> MOVING = EntityDataManager.defineId(SnailEntity.class, DataSerializers.BOOLEAN);
 	private static final Ingredient DIET = Ingredient.of(Blocks.ACACIA_LEAVES, Blocks.BIRCH_LEAVES, Blocks.DARK_OAK_LEAVES, Blocks.JUNGLE_LEAVES, Blocks.OAK_LEAVES, Blocks.SPRUCE_LEAVES);
 	private static final DataParameter<Boolean> TRUSTING = EntityDataManager.defineId(SnailEntity.class, DataSerializers.BOOLEAN);
+	private static final DataParameter<Byte> DATA_FLAGS_ID = EntityDataManager.defineId(SnailEntity.class, DataSerializers.BYTE);
 	private SnailEntity.SnailAvoidEntityGoal<PlayerEntity> snailAvoidPlayersGoal;
 	private AnimationFactory factory = new AnimationFactory(this);
 	private LookRandomlyGoal lookRandom;
@@ -73,6 +76,10 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		this.reassessTrustingGoals();
 	}
 
+	protected PathNavigator createNavigation(World p_175447_1_) {
+		return new ClimberPathNavigator(this, p_175447_1_);
+	}
+	
 	@Override
 	protected float getStandingEyeHeight(Pose poseIn, EntitySize sizeIn) {
 		return sizeIn.height * 0.4F;
@@ -122,6 +129,7 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		this.entityData.define(HIDING, false);
 		this.entityData.define(MOVING, false);
 		this.entityData.define(TRUSTING, false);
+		this.entityData.define(DATA_FLAGS_ID, (byte)0);
 	}
 
 	public int getSnailType() {
@@ -179,9 +187,20 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 				this.getEntityData().set(MOVING, false);
 			}
 		}
+		
+		if (!this.level.isClientSide) {
+			this.setClimbing(this.horizontalCollision);
+		}
 		super.tick();
 	}
 
+	private int getRotation(int rotation) {
+		if (rotation > (  0 + 45) && rotation < ( 90 + 45)) return 1; // E
+		if (rotation > ( 90 + 45) && rotation < (180 + 45)) return 2; // S
+		if (rotation > (180 + 45) && rotation < (270 + 45)) return 3; // W
+		return 0; 													  // N
+	}
+	
 	public SnailEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
 		SnailEntity snailentity = new SnailEntity(KonchuEntityType.SNAIL.get(), world);
 		if (entity instanceof SnailEntity) {
@@ -230,6 +249,25 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		return false;
 	}
 
+	public boolean isClimbing() {
+		return (this.entityData.get(DATA_FLAGS_ID) & 1) != 0;
+	}
+
+	public boolean onClimbable() {
+		return this.isClimbing();
+	}
+	
+	public void setClimbing(boolean p_70839_1_) {
+		byte b0 = this.entityData.get(DATA_FLAGS_ID);
+		if (p_70839_1_) {
+			b0 = (byte) (b0 | 1);
+		} else {
+			b0 = (byte) (b0 & -2);
+		}
+
+		this.entityData.set(DATA_FLAGS_ID, b0);
+	}
+	
 	@Override
 	public boolean hurt(DamageSource damage, float f) {
 		setHiding(true);
