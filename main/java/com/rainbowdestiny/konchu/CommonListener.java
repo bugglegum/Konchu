@@ -11,11 +11,10 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = Konchu.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CommonListener {
-	
 	@SuppressWarnings("deprecation")
 	@SubscribeEvent
 	public static void registerEntityAttributes(EntityAttributeCreationEvent event) {
-			GlobalEntityTypeAttributes.put(KonchuEntityType.SNAIL.get(), SnailEntity.setCustomAttributes().build());
-			GlobalEntityTypeAttributes.put(KonchuEntityType.FROG.get(), FrogEntity.setCustomAttributes().build());
+			GlobalEntityTypeAttributes.put(KonchuEntityType.SNAIL.get(), 	SnailEntity.setCustomAttributes().build());
+			GlobalEntityTypeAttributes.put(KonchuEntityType.FROG.get(), 	FrogEntity.setCustomAttributes().build());
 	}
 }

@@ -44,8 +44,6 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class SnailEntity extends AnimalEntity implements IAnimatable {
-
-	//Entity Setup
 	public static final DataParameter<Integer> SNAIL_TYPE = EntityDataManager.defineId(SnailEntity.class, DataSerializers.INT);
 	private static final DataParameter<Boolean> HIDING = EntityDataManager.defineId(SnailEntity.class, DataSerializers.BOOLEAN);
 	private static final DataParameter<Boolean> MOVING = EntityDataManager.defineId(SnailEntity.class, DataSerializers.BOOLEAN);
@@ -80,7 +78,6 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		return sizeIn.height * 0.4F;
 	}
 
-	//Attributes
 	public static AttributeModifierMap.MutableAttribute setCustomAttributes() {
 		return MobEntity.createLivingAttributes()
 				.add(Attributes.MOVEMENT_SPEED, (double) 0.1F)
@@ -94,7 +91,6 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		return DIET.test(itemStack);
 	}
 
-	//Snail Data
 	public void addAdditionalSaveData(CompoundNBT nbt) {
 		super.addAdditionalSaveData(nbt);
 		nbt.putBoolean("Trusting", this.isTrusting());
@@ -234,7 +230,6 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		return false;
 	}
 
-	//Hiding Control
 	@Override
 	public boolean hurt(DamageSource damage, float f) {
 		setHiding(true);
@@ -251,7 +246,6 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		return flag;
 	}
 
-	//Goal Setup
 	static class SnailAvoidEntityGoal<T extends LivingEntity> extends AvoidEntityGoal<T> {
 		private final SnailEntity snail;
 
@@ -259,11 +253,9 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 			super(snail, classObj, f, d1, d2, EntityPredicates.NO_CREATIVE_OR_SPECTATOR::test);
 			this.snail = snail;
 		}
-
 		public boolean canUse() {
 			return !this.snail.isTrusting() && super.canUse();
 		}
-
 		public boolean canContinueToUse() {
 			return !this.snail.isTrusting() && super.canContinueToUse();
 		}
@@ -276,32 +268,28 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 			super(snail, d, ingredient, b);
 			this.snail = snail;
 		}
-
 		protected boolean canScare() {
 			return super.canScare() && !this.snail.isTrusting();
 		}
 	}
 
-	//Animation Controllers
 	@SuppressWarnings("unchecked")
 	private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
 		if (!this.isHiding()) {
 			if (this.isMoving()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snail.move", true));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("snail_move", true));
 			} else {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snail.idle", true));       	
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("snail_idle", true));       	
 			}
 		} else {
 			if (this.isHiding()) {
 				event.getController().transitionLengthTicks  = 2;
 				event.getController().easingType = EasingType.EaseInOutBounce;
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snail.hide", false));        	
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("snail_hide", false));        	
 			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snail.hiding", true));        	
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("snail_hiding", true));        	
 		}
 		return PlayState.CONTINUE;
-
-
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })

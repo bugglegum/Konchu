@@ -107,8 +107,12 @@ public class KonchuBlocks {
 	public static RegistryObject<Block> RICE_COOKER	= KonchuRegistry.BLOCKS.register("rice_cooker",	() -> new RiceCookerBlock(AbstractBlock.Properties.of(Material.METAL, MaterialColor.SNOW).harvestLevel(1).strength(1.3F, 6.0F).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops()));
 	
 	/* Flora */
-	public static RegistryObject<Block> CHERRY_LEAVES	= KonchuRegistry.BLOCKS.register("cherry_leaves", 	() -> new LeavesBlock(AbstractBlock.Properties.of(Material.LEAVES, 		MaterialColor.COLOR_PINK)		.strength(0.2F, 0.2F).sound(SoundType.CROP).noOcclusion()));
-	public static RegistryObject<Block> MARIMO			= KonchuRegistry.BLOCKS.register("marimo", 			() -> new MarimoBlock(AbstractBlock.Properties.of(Material.VEGETABLE, 	MaterialColor.TERRACOTTA_GREEN)	.strength(1.0F, 1.0F).sound(SoundType.WET_GRASS)));
+	//public static RegistryObject<Block> CHERRY_SAPLING			= KonchuRegistry.BLOCKS.register("cherry_sapling", 			() -> new SaplingBlock	(new CherryTree(), AbstractBlock.Properties.of(Material.PLANT, MaterialColor.SNOW).sound(SoundType.GRASS).noOcclusion().randomTicks().instabreak()));
+
+	public static RegistryObject<Block> WHITE_CHERRY_LEAVES		= KonchuRegistry.BLOCKS.register("white_cherry_leaves", 	() -> new LeavesBlock	(AbstractBlock.Properties.of(Material.LEAVES, 		MaterialColor.SNOW)				.strength(0.2F, 0.2F).sound(SoundType.GRASS).noOcclusion()));
+	public static RegistryObject<Block> PINK_CHERRY_LEAVES		= KonchuRegistry.BLOCKS.register("pink_cherry_leaves", 		() -> new LeavesBlock	(AbstractBlock.Properties.of(Material.LEAVES, 		MaterialColor.COLOR_PINK)		.strength(0.2F, 0.2F).sound(SoundType.GRASS).noOcclusion()));
+	public static RegistryObject<Block> MAGENTA_CHERRY_LEAVES	= KonchuRegistry.BLOCKS.register("magenta_cherry_leaves", 	() -> new LeavesBlock	(AbstractBlock.Properties.of(Material.LEAVES, 		MaterialColor.COLOR_MAGENTA)	.strength(0.2F, 0.2F).sound(SoundType.GRASS).noOcclusion()));	
+	public static RegistryObject<Block> MARIMO					= KonchuRegistry.BLOCKS.register("marimo", 					() -> new MarimoBlock	(AbstractBlock.Properties.of(Material.VEGETABLE, 	MaterialColor.TERRACOTTA_GREEN)	.strength(1.0F, 1.0F).sound(SoundType.WET_GRASS)));
 	
 	/* Miscellaneous */
 	public static RegistryObject<Block> CRAB_BLOCK = KonchuRegistry.BLOCKS.register("crab_block", () -> new RotatedBlock(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_RED).harvestLevel(1).strength(25.0F, 900.0F).sound(SoundType.NETHERRACK)));

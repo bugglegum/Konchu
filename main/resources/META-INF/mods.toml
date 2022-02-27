@@ -4,12 +4,12 @@ license="All rights reserved"
  
 [[mods]]
 modId="konchu"
-version="v0.0.1"
+version="v1.0.0"
 displayName="Konchu"
-logoFile="konchu.png"
+logoFile="konchu_logo.png"
 credits="rainbowdestiny"
 authors="rainbowdestiny"
 description='''
-A mod that adds arthropod wildlife to Minecraft!
+A nature expansion mod for Minecraft!
 ''' 
  

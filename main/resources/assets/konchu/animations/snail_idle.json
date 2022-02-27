@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.snail.idle": {
+		"snail_idle": {
 			"loop": true,
 			"animation_length": 1.54167,
 			"bones": {
@@ -83,6 +83,54 @@
 						"1.5": {
 							"vector": [0, 0, 0],
 							"easing": "easeInQuad"
+						}
+					}
+				}
+			}
+		},
+		"animation.model.new": {
+			"animation_length": 2.04167,
+			"bones": {
+				"Eye2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.6667": {
+							"vector": [-17.5, 0, 0],
+							"easing": "easeInCirc"
+						},
+						"2.0417": {
+							"vector": [0, 0, 0],
+							"easing": "easeOutBack"
+						}
+					}
+				},
+				"Eye1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.375": {
+							"vector": [-17.5, 0, 0],
+							"easing": "easeInCirc"
+						},
+						"2.0417": {
+							"vector": [0, 0, 0],
+							"easing": "easeOutCirc"
+						}
+					}
+				},
+				"Shell": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [7.5, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 0, 0]
 						}
 					}
 				}

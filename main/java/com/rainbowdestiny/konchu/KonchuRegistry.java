@@ -35,14 +35,13 @@ public class KonchuRegistry {
 
 	@SuppressWarnings("rawtypes")
 	public static void init() {
-		
 		Blocks			= new KonchuBlocks();
 		Items			= new KonchuItems();
 		Sounds			= new KonchuSoundEvents();
 		TileEntityType	= new KonchuTileEntityType();
 		Entities		= new KonchuEntityType();
 		Biomes			= new KonchuBiomes();
-				
+		
 		BLOCKS.register			(FMLJavaModLoadingContext.get().getModEventBus());
 		ITEMS.register			(FMLJavaModLoadingContext.get().getModEventBus());
 		SOUNDS.register			(FMLJavaModLoadingContext.get().getModEventBus());

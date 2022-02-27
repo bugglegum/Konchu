@@ -9,11 +9,11 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 public class SnailModel extends AnimatedGeoModel<SnailEntity> {
 
 	//Texture Assignment
-	protected static final ResourceLocation BROWN = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/brown_snail.png");
-	protected static final ResourceLocation GREEN = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/green_snail.png");
-	protected static final ResourceLocation GRAY = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/gray_snail.png");
-	protected static final ResourceLocation GOLDEN = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/golden_snail.png");		
-	protected static final ResourceLocation GARY = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/gary.png");
+	protected static final ResourceLocation BROWN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/brown_snail.png");
+	protected static final ResourceLocation GREEN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/green_snail.png");
+	protected static final ResourceLocation GRAY	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/gray_snail.png");
+	protected static final ResourceLocation GOLDEN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/golden_snail.png");		
+	protected static final ResourceLocation GARY	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/gary.png");
 	protected static final ResourceLocation SHELDON = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/sheldon.png");
 
 	@Override
@@ -49,12 +49,12 @@ public class SnailModel extends AnimatedGeoModel<SnailEntity> {
 	public ResourceLocation getAnimationFileLocation(SnailEntity object) {
 		if (!object.isHiding()) {
 			if (object.isMoving()) {
-				return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.move.json");
+				return new ResourceLocation(Konchu.MOD_ID, "animations/snail_move.json");
 			} else {
-				return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.idle.json");
+				return new ResourceLocation(Konchu.MOD_ID, "animations/snail_idle.json");
 			}
 		} else {
-			return new ResourceLocation(Konchu.MOD_ID, "animations/animation.snail.hiding.json");
+			return new ResourceLocation(Konchu.MOD_ID, "animations/snail_hiding.json");
 		}
 	}
 }

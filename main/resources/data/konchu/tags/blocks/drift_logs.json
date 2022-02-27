@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "konchu:infested_drift_log",
+    "konchu:infested_drift_wood",
+    "konchu:stripped_infested_drift_log",
+    "konchu:stripped_infested_drift_wood",
+    "konchu:drift_log",
+    "konchu:drift_wood",
+    "konchu:stripped_drift_log",
+    "konchu:stripped_drift_wood"
+  ]
+}

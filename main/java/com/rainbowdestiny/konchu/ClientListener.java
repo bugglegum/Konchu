@@ -13,7 +13,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(modid = Konchu.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientListener extends CommonListener {
-	
 	@SubscribeEvent
 	public static void registerRenderers(final FMLClientSetupEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(KonchuEntityType.CHAIR.get(), EmptyRenderer::new);
