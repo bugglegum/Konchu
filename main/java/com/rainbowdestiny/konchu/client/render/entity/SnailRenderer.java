@@ -16,26 +16,43 @@ public class SnailRenderer extends GeoEntityRenderer<SnailEntity> {
 
 	@Override
 	public void render(SnailEntity entity, float entityYaw, float partialTicks, MatrixStack stack, IRenderTypeBuffer bufferIn, int packedLightIn) {
-		
-		if(entity.isClimbing()) {
-			int rotation = getRotation((int) entityYaw + 180);
-			// rotation * 90  	== get 0/90/180/270 cardinal
-			// entityYaw + 180	== get direction it's looking at
-			// cardinal - direction it's looking at
-			
-			// Ex. Needs to be at 0deg, it's at 45deg (once added with 180) 
-			// 0 - 45 == -45, snail must move -45deg to set itself to be 0
-			stack.mulPose(Vector3f.YP.rotationDegrees(rotation * 90 - (entityYaw + 180)));
-		}
 
+		// attempting to tweak rotations along wall
+		
+		if (entity.isClimbing()) {
+			int rotation = getRotation(entity.yBodyRot + 180);
+			System.out.println(rotation);
+			switch (rotation) {
+				case 0: default: {
+					stack.mulPose(Vector3f.XP.rotationDegrees(-90));
+					stack.mulPose(Vector3f.ZP.rotationDegrees(180));
+
+					break;
+				}
+				case 1: {
+					stack.mulPose(Vector3f.ZP.rotationDegrees(90));
+					break;
+				}
+				case 2: {
+					stack.mulPose(Vector3f.XP.rotationDegrees(-90));
+					break;
+				}
+				case 3: {
+					stack.mulPose(Vector3f.ZP.rotationDegrees(-90));
+					break;			
+				}
+			}
+			stack.translate(0, 4 / 16D, 0);
+		}
+			
 		super.render(entity, entityYaw, partialTicks, stack, bufferIn, packedLightIn);
 
 	}
-	
-	private int getRotation(int rotation) {
-		if (rotation > (  0 + 45) && rotation < ( 90 + 45)) return 1; // E
-		if (rotation > ( 90 + 45) && rotation < (180 + 45)) return 2; // S
+
+	public static int getRotation(float rotation) {
+		if (rotation > (0 + 45) && rotation < (90 + 45)) return 1; // E
+		if (rotation > (90 + 45) && rotation < (180 + 45)) return 2; // S
 		if (rotation > (180 + 45) && rotation < (270 + 45)) return 3; // W
-		return 0; 													  // N
+		return 0; // N
 	}
 }

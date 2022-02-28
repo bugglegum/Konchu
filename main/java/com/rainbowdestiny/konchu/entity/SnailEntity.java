@@ -2,6 +2,7 @@ package com.rainbowdestiny.konchu.entity;
 
 import javax.annotation.Nullable;
 
+import com.rainbowdestiny.konchu.client.render.entity.SnailRenderer;
 import com.rainbowdestiny.konchu.util.goals.HidingGoal;
 
 import net.minecraft.block.Blocks;
@@ -192,13 +193,8 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 			this.setClimbing(this.horizontalCollision);
 		}
 		super.tick();
-	}
-
-	private int getRotation(int rotation) {
-		if (rotation > (  0 + 45) && rotation < ( 90 + 45)) return 1; // E
-		if (rotation > ( 90 + 45) && rotation < (180 + 45)) return 2; // S
-		if (rotation > (180 + 45) && rotation < (270 + 45)) return 3; // W
-		return 0; 													  // N
+		
+		if(this.isClimbing()) this.setYBodyRot(SnailRenderer.getRotation(this.yBodyRot + 180) * 90F - 180);
 	}
 	
 	public SnailEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
