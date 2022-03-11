@@ -194,7 +194,7 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		}
 		super.tick();
 		
-		if(this.isClimbing()) this.setYBodyRot(SnailRenderer.getRotation(this.yBodyRot + 180) * 90F - 180);
+		if(this.isClimbing()) this.setYBodyRot(SnailRenderer.getRotation(this) * 90F - 180);
 	}
 	
 	public SnailEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
