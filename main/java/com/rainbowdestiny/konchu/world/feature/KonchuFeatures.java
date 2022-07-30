@@ -3,7 +3,9 @@ package com.rainbowdestiny.konchu.world.feature;
 import com.rainbowdestiny.konchu.Konchu;
 
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.TreeFeature;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.minecraftforge.fml.RegistryObject;
@@ -24,3 +26,4 @@ public class KonchuFeatures {
     public static final RegistryObject<TreeDecoratorType<?>> LICHEN_GROWTH = TREE_DECORATORS.register("lichen_growth", () -> new TreeDecoratorType<>(LichenGrowthFeature.CODEC));
 }
     
+public static final ConfiguredFeature<?, ?> VINES = register("vines", Feature.VINES.configured(IFeatureConfig.NONE).squared().count(50));

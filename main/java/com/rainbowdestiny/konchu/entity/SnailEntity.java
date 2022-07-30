@@ -196,6 +196,14 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 		
 		if(this.isClimbing()) this.setYBodyRot(SnailRenderer.getRotation(this) * 90F - 180);
 	}
+
+	@SuppressWarnings("unused")
+	private int getRotation(int rotation) {
+		if (rotation > (  0 + 45) && rotation < ( 90 + 45)) return 1; // E
+		if (rotation > ( 90 + 45) && rotation < (180 + 45)) return 2; // S
+		if (rotation > (180 + 45) && rotation < (270 + 45)) return 3; // W
+		return 0; 													  // N
+	}
 	
 	public SnailEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
 		SnailEntity snailentity = new SnailEntity(KonchuEntityType.SNAIL.get(), world);
@@ -334,5 +342,4 @@ public class SnailEntity extends AnimalEntity implements IAnimatable {
 	public AnimationFactory getFactory() {
 		return this.factory;
 	}
-
 }

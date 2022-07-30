@@ -9,9 +9,9 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 public class SnailModel extends AnimatedGeoModel<SnailEntity> {
 
 	//Texture Assignment
-	protected static final ResourceLocation BROWN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/brown_snail.png");
-	protected static final ResourceLocation GREEN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/green_snail.png");
-	protected static final ResourceLocation GRAY	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/gray_snail.png");
+	protected static final ResourceLocation BROWN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/grove_snail/grove_snail_1.png");
+	protected static final ResourceLocation GREEN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/grove_snail/grove_snail_2.png");
+	protected static final ResourceLocation GRAY	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/grove_snail/grove_snail_3.png");
 	protected static final ResourceLocation GOLDEN	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/golden_snail.png");		
 	protected static final ResourceLocation GARY	= new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/gary.png");
 	protected static final ResourceLocation SHELDON = new ResourceLocation(Konchu.MOD_ID, "textures/entity/snail/sheldon.png");

@@ -56,9 +56,8 @@ public class LichenGrowthBlock extends Block implements IGrowable, net.minecraft
 		return stateDown.() || stateDown.getBlock() == this || stateDown.is(BlockTags.LEAVES) || stateDown.getBlock() == KonchuBlocks.LICHEN_BLOCK.get();
 	}
 
-	@Override
 	public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-		if (!stateIn.isValidPosition(worldIn, currentPos)) {
+		if (!stateIn.isFaceSturdy(worldIn, currentPos)) {
 			return Blocks.AIR.defaultBlockState();
 		} else {
 			return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
@@ -81,7 +80,7 @@ public class LichenGrowthBlock extends Block implements IGrowable, net.minecraft
 			}
 		}
 	}
-	
+
 	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
 		return false;
 	}
@@ -98,6 +97,15 @@ public class LichenGrowthBlock extends Block implements IGrowable, net.minecraft
 
 	@Override
 	public void performBonemeal(ServerWorld world, Random rand, BlockPos pos, BlockState state) {		
+	}
+
+	public static boolean isAcceptableNeighbour(IBlockReader reader, BlockPos pos, Direction dir) {
+		BlockState blockstate = reader.getBlockState(pos);
+		return Block.isFaceFull(blockstate.getCollisionShape(reader, pos), dir.getOpposite());
+	}
+
+	public static BooleanProperty getPropertyForFace(Direction dir) {
+		return PROPERTY_BY_DIRECTION.get(dir);
 	}
 }
 
